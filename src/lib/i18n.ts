@@ -115,7 +115,7 @@ export const translations = {
       support: "Support",
       crafted: "",
       companyLinks: ["Home", "About", "How it Works", "Features"],
-      supportLinks: ["FAQs", "Privacy Policy", "contact@zoujup.com"],
+      supportLinks: ["FAQs", "Privacy Policy", "Contact"],
     },
   },
 
@@ -238,7 +238,7 @@ export const translations = {
       support: "Support",
       crafted: "",
       companyLinks: ["Accueil", "À propos", "Comment ça marche", "Fonctionnalités"],
-      supportLinks: ["FAQs", "Confidentialité", "contact@zoujup.com"],
+      supportLinks: ["FAQs", "Confidentialité", "Contact"],
     },
   },
 
@@ -357,7 +357,7 @@ export const translations = {
       support: "Soporte",
       crafted: "",
       companyLinks: ["Inicio", "Acerca de", "Cómo funciona", "Características"],
-      supportLinks: ["FAQs", "Política de Privacidad", "contact@zoujup.com"],
+      supportLinks: ["FAQs", "Política de Privacidad", "Contacto"],
     },
   },
 } as const;
