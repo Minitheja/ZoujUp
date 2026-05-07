@@ -121,7 +121,7 @@ export function Footer() {
                             setTimeout(() => {
                               const el = document.getElementById(hash);
                               if (el) {
-                                el.scrollIntoView({ behavior: "smooth", block: "center" });
+                                el.scrollIntoView({ behavior: "smooth", block: "start" });
                               }
                             }, 10);
                           }
