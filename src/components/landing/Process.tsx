@@ -33,17 +33,17 @@ export function Process() {
               return (
                 <div
                   key={title}
-                  className="flex gap-4 sm:gap-6 items-start bg-white p-6 sm:p-8 rounded-[20px] border border-[#E5E7EB] shadow-sm hover:border-[#FFC107] transition-all duration-300"
+                  className="flex flex-col sm:flex-row gap-5 sm:gap-6 items-center sm:items-start bg-white p-6 sm:p-8 rounded-[24px] border border-[#E5E7EB] shadow-sm hover:border-[#FFC107] transition-all duration-300 text-center sm:text-left"
                 >
-                  <div className="inline-flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-[12px] bg-[#F8F9FA] border border-[#E5E7EB] shadow-sm transition-colors duration-200">
-                    <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-[#FFC107]" strokeWidth={2} />
+                  <div className="inline-flex h-14 w-14 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-[16px] bg-[#F8F9FA] border border-[#E5E7EB] shadow-sm transition-colors duration-200">
+                    <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-[#FFC107]" strokeWidth={2} />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold mb-1.5 text-[#1A1A1A] flex items-start">
-                      {num && <span className="text-[#1A1A1A] mr-2 shrink-0">{num}</span>}
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A] flex flex-col sm:flex-row items-center sm:items-start gap-1 sm:gap-0">
+                      {num && <span className="text-[#1A1A1A] sm:mr-2 shrink-0">{num}</span>}
                       <span>{content}</span>
                     </h3>
-                    <p className="text-[#6B7280] leading-relaxed text-sm sm:text-base">{desc}</p>
+                    <p className="text-[#6B7280] leading-relaxed text-base sm:text-lg">{desc}</p>
                   </div>
                 </div>
               );
