@@ -46,17 +46,16 @@ export const translations = {
       titleAccent: "different",
       items: [
         {
-          title: "1. You've tried other apps. You know how it goes.",
-          desc: "",
+          title: "1. You've tried other apps.",
+          desc: "You know how it goes. Endless swiping and ghosting.",
         },
         {
-          title: "2. You match → it dies. Conversations go nowhere. It feels like dating.",
-          desc: "",
+          title: "2. You match → it dies.",
+          desc: "Conversations go nowhere. It feels like dating.",
         },
         {
-          title:
-            "3. ZoujUp is different. Every session is guided, structured, and balanced. Short enough to fit your day. Effective enough to matter.",
-          desc: "",
+          title: "3. ZoujUp is different.",
+          desc: "Every session is guided, structured, and balanced. Short enough to fit your day. Effective enough to matter.",
         },
       ],
       footerText: "No swiping. No random chats. No dating vibe. Just real practice.",
@@ -171,18 +170,16 @@ export const translations = {
       titleAccent: "différent",
       items: [
         {
-          title: "1. Vous avez essayé d'autres applis. Vous savez comment ça se passe.",
-          desc: "",
+          title: "1. Vous avez déjà essayé d'autres applis.",
+          desc: "Vous savez comment ça se passe. Swipe infini and ghosting.",
         },
         {
-          title:
-            "2. Vous matchez → ça meurt. Les conversations ne mènent nulle part. On se croirait sur une appli de rencontres.",
-          desc: "",
+          title: "2. Vous matchez → ça meurt.",
+          desc: "Les conversations ne mènent nulle part. On se croirait sur une appli de rencontres.",
         },
         {
-          title:
-            "3. ZoujUp est différent. Chaque session est guidée, structurée et équilibrée. Assez courte pour s'adapter à votre journée. Assez efficace pour compter.",
-          desc: "",
+          title: "3. ZoujUp est différent.",
+          desc: "Chaque session est guidée, structurée et équilibrée. Assez courte pour s'adapter à votre journée. Assez efficace pour compter.",
         },
       ],
       footerText:
@@ -295,17 +292,16 @@ export const translations = {
       titleAccent: "diferente",
       items: [
         {
-          title: "1. Has probado otras apps. Ya sabes cómo va.",
-          desc: "",
+          title: "1. Has probado otras apps.",
+          desc: "Ya sabes cómo va. Deslizar sin fin y ghosting.",
         },
         {
-          title: "2. Conectas → la conversación muere. No llega a nada. Parece una app de citas.",
-          desc: "",
+          title: "2. Conectas → la conversación muere.",
+          desc: "No llega a nada. Parece una app de citas.",
         },
         {
-          title:
-            "3. ZoujUp es diferente. Cada sesión es guiada, estructurada y equilibrada. Lo suficientemente corta para tu día. Lo suficientemente efectiva para importar.",
-          desc: "",
+          title: "3. ZoujUp es diferente.",
+          desc: "Cada sesión es guiada, estructurada y equilibrada. Lo suficientemente corta para tu día. Lo suficientemente efectiva para importar.",
         },
       ],
       footerText: "Sin deslizar. Sin chats aleatorios. Sin vibras de citas. Solo práctica real.",

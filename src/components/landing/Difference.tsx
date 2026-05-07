@@ -10,14 +10,17 @@ export function Difference() {
   return (
     <section id="difference" className="pt-6 pb-12 sm:pt-8 sm:pb-16 bg-transparent relative scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-[#1A1A1A]">
             {d.title} <span className="text-[#FFC107]">{d.titleAccent}</span>
           </h2>
+          {d.subtitle && (
+            <p className="text-[#6B7280] leading-relaxed text-sm sm:text-base">{d.subtitle}</p>
+          )}
         </div>
 
         <div className="max-w-3xl mx-auto mb-10 sm:mb-12">
-          <div className="space-y-4 sm:space-y-5">
+          <div className="space-y-8 sm:space-y-10">
             {d.items.map((item, i) => {
               const Icon = icons[i];
               // Split number and text (e.g. "1. " and "Text")
@@ -28,21 +31,19 @@ export function Difference() {
               return (
                 <div
                   key={i}
-                  className="flex gap-3 sm:gap-4 items-start bg-white p-4 sm:p-5 rounded-[16px] border border-[#E5E7EB] shadow-sm hover:border-[#FFC107] transition-all duration-300"
+                  className="flex gap-5 sm:gap-6 items-start bg-white p-6 sm:p-8 rounded-[24px] border border-[#E5E7EB] shadow-sm hover:border-[#FFC107] transition-all duration-300"
                 >
-                  <div className="inline-flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-[10px] bg-[#F8F9FA] border border-[#E5E7EB] shadow-sm transition-colors duration-200">
-                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#FFC107]" strokeWidth={2} />
+                  <div className="inline-flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-[16px] bg-[#F8F9FA] border border-[#E5E7EB] shadow-sm transition-colors duration-200">
+                    <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-[#FFC107]" strokeWidth={2} />
                   </div>
                   <div>
-                    <h3 className="text-base sm:text-lg font-bold mb-1 text-[#1A1A1A] flex items-start">
-                      {num && <span className="text-[#1A1A1A] mr-1.5 shrink-0">{num}</span>}
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A] flex items-start">
+                      {num && <span className="text-[#1A1A1A] mr-2 shrink-0">{num}</span>}
                       <span>{content}</span>
                     </h3>
-                    {item.desc && (
-                      <p className="text-[#6B7280] leading-relaxed text-xs sm:text-sm">
-                        {item.desc}
-                      </p>
-                    )}
+                    <p className="text-[#6B7280] leading-relaxed text-base sm:text-lg">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               );

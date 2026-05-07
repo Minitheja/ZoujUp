@@ -86,9 +86,9 @@ export function Navbar() {
                     window.history.pushState(null, "", `${item.to}#${item.hash}`);
                     setTimeout(() => {
                       const el = document.getElementById(item.hash);
-                      if (el) {
-                        el.scrollIntoView({ behavior: "smooth", block: "center" });
-                      }
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }
                     }, 10);
                   }
                 }}
@@ -190,7 +190,7 @@ export function Navbar() {
                       setTimeout(() => {
                         const el = document.getElementById(item.hash);
                         if (el) {
-                          el.scrollIntoView({ behavior: "smooth", block: "center" });
+                          el.scrollIntoView({ behavior: "smooth", block: "start" });
                         }
                       }, 10);
                     }
