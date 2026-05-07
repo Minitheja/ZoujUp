@@ -94,99 +94,89 @@ function Index() {
               <>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#111111] mb-6 sm:mb-8">
                   {c.title}
-                </h2>
-                <form
-                  onSubmit={handleSubmit}
-                  className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto"
-                >
-                  <div className="w-full flex flex-col gap-3">
-                    <div className="relative w-full">
-                      <select
-                        name="Native Language"
-                        required
-                        className="w-full appearance-none rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base cursor-pointer"
-                        defaultValue=""
-                      >
-                        <option value="" disabled>
-                          {c.nativeLang}
-                        </option>
-                        {c.langOptions.map((opt) => (
-                          <option key={opt} value={opt}>
-                            {opt}
-                          </option>
-                        ))}
-                      </select>
-                      <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none">
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1.5L6 6.5L11 1.5" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div className="relative w-full">
-                      <select
-                        name="Practice Language"
-                        required
-                        className="w-full appearance-none rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base cursor-pointer"
-                        defaultValue=""
-                      >
-                        <option value="" disabled>
-                          {c.practiceLang}
-                        </option>
-                        {c.langOptions.map((opt) => (
-                          <option key={opt} value={opt}>
-                            {opt}
-                          </option>
-                        ))}
-                      </select>
-                      <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none">
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1.5L6 6.5L11 1.5" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    <input
-                      name="Email"
-                      type="email"
-                      placeholder={c.placeholder}
-                      required
-                      className="w-full rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base"
-                    />
-                  </div>
-                  
-                  <button
-                    type="submit"
-                    disabled={status === "submitting"}
-                    className="w-full inline-flex items-center justify-center gap-3 rounded-[12px] bg-[#111111] px-8 py-4 text-white font-bold shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:bg-black transition-colors duration-200 text-base disabled:opacity-70 disabled:cursor-not-allowed"
+                        <form
+              action="https://formspree.io/f/zoujup@gmail.com"
+              method="POST"
+              target="_blank"
+              className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto"
+            >
+              <div className="w-full flex flex-col gap-3">
+                <div className="relative w-full">
+                  <select
+                    name="Native Language"
+                    required
+                    className="w-full appearance-none rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base cursor-pointer"
+                    defaultValue=""
                   >
-                    {status === "submitting" ? (
-                      <div className="h-5 w-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    ) : (
-                      c.button
-                    )}
-                  </button>
-                  
-                  {status === "error" && (
-                    <p className="text-red-800 text-sm font-bold mt-4">
-                      {lang === "en" ? "Something went wrong. Please try again later." : lang === "fr" ? "Une erreur est survenue. Veuillez réessayer plus tard." : "Algo salió mal. Por favor, inténtalo de nuevo más tarde."}
-                    </p>
-                  )}
-                  
-                  <p className="text-[11px] sm:text-xs text-[#111111]/60 italic mt-4 leading-tight text-center">
-                    {lang === "en" ? (
-                      <>
-                        By joining, you agree to our{" "}
-                        <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                          Privacy Policy
-                        </Link>
-                        . We will never share your email.
-                      </>
-                    ) : lang === "fr" ? (
-                      <>
-                        En vous inscrivant, vous acceptez notre{" "}
-                        <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                          Politique de Confidentialité
+                    <option value="" disabled>
+                      {c.nativeLang}
+                    </option>
+                    {c.langOptions.map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                  </select>
+                  <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div className="relative w-full">
+                  <select
+                    name="Practice Language"
+                    required
+                    className="w-full appearance-none rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base cursor-pointer"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      {c.practiceLang}
+                    </option>
+                    {c.langOptions.map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                  </select>
+                  <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+
+                <input
+                  name="Email"
+                  type="email"
+                  placeholder={c.placeholder}
+                  required
+                  className="w-full rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base"
+                />
+              </div>
+              
+              <button
+                type="submit"
+                className="w-full inline-flex items-center justify-center gap-3 rounded-[12px] bg-[#111111] px-8 py-4 text-white font-bold shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:bg-black transition-colors duration-200 text-base"
+              >
+                {c.button}
+              </button>
+              
+              <p className="text-[11px] sm:text-xs text-[#111111]/60 italic mt-4 leading-tight text-center">
+                {lang === "en" ? (
+                  <>
+                    By joining, you agree to our{" "}
+                    <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
+                      Privacy Policy
+                    </Link>
+                    . We will never share your email.
+                  </>
+                ) : lang === "fr" ? (
+                  <>
+                    En vous inscrivant, vous acceptez notre{" "}
+                    <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
+                      Politique de Confidentialité
                     </Link>
                     . Nous ne partagerons jamais votre e-mail.
                   </>
@@ -203,6 +193,7 @@ function Index() {
             </form>
             <p className="mt-5 sm:mt-6 text-[#111111] opacity-80 font-medium italic text-sm sm:text-base text-center">
               {c.note}
+            </p>
             </p>
           </>
         )}
