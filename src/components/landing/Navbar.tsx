@@ -81,12 +81,14 @@ export function Navbar() {
                 hash={item.hash}
                 onClick={(e) => {
                   if (item.hash && (window.location.pathname === item.to || item.to === "/")) {
-                    const el = document.getElementById(item.hash);
-                    if (el) {
-                      e.preventDefault();
-                      el.scrollIntoView({ behavior: "smooth", block: "center" });
-                      window.history.pushState(null, "", `${item.to}#${item.hash}`);
-                    }
+                    e.preventDefault();
+                    window.history.pushState(null, "", `${item.to}#${item.hash}`);
+                    setTimeout(() => {
+                      const el = document.getElementById(item.hash);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth", block: "center" });
+                      }
+                    }, 10);
                   }
                 }}
                 className="text-base font-semibold text-[#1A1A1A] hover:underline underline-offset-4 transition-all duration-200"
@@ -182,12 +184,14 @@ export function Navbar() {
                   onClick={(e) => {
                     setOpen(false);
                     if (item.hash && (window.location.pathname === item.to || item.to === "/")) {
-                      const el = document.getElementById(item.hash);
-                      if (el) {
-                        e.preventDefault();
-                        el.scrollIntoView({ behavior: "smooth", block: "center" });
-                        window.history.pushState(null, "", `${item.to}#${item.hash}`);
-                      }
+                      e.preventDefault();
+                      window.history.pushState(null, "", `${item.to}#${item.hash}`);
+                      setTimeout(() => {
+                        const el = document.getElementById(item.hash);
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth", block: "center" });
+                        }
+                      }, 10);
                     }
                   }}
                   className="block py-3 px-2 text-base font-medium text-[#1A1A1A] hover:underline underline-offset-4 transition-all rounded-lg"

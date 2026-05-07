@@ -114,13 +114,14 @@ export function Footer() {
                           
                           // If it's a hash link on the same page, scroll manually to be safe
                           if (hash && (window.location.pathname === to || to === "/")) {
-                            const el = document.getElementById(hash);
-                            if (el) {
-                              e.preventDefault();
-                              el.scrollIntoView({ behavior: "smooth", block: "center" });
-                              // Update URL hash without jumping
-                              window.history.pushState(null, "", `${to}#${hash}`);
-                            }
+                            e.preventDefault();
+                            window.history.pushState(null, "", `${to}#${hash}`);
+                            setTimeout(() => {
+                              const el = document.getElementById(hash);
+                              if (el) {
+                                el.scrollIntoView({ behavior: "smooth", block: "center" });
+                              }
+                            }, 10);
                           }
                         }}
                         className="hover:opacity-100 hover:text-[#FFC107] transition-colors duration-200"
