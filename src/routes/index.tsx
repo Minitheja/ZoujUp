@@ -96,7 +96,7 @@ function Index() {
                   {c.title}
                 </h2>
                 <form
-              action="https://formspree.io/f/zoujup@gmail.com"
+              action="https://formspree.io/f/xpqblnbj"
               method="POST"
               target="_blank"
               className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto"
