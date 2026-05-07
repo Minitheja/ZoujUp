@@ -20,9 +20,9 @@ export function Process() {
           <p className="text-[#6B7280] leading-relaxed text-sm sm:text-base">{p.subtitle}</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Steps */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {p.steps.map(({ title, desc }, i) => {
               const Icon = icons[i];
               // Split number and text (e.g. "1. " and "Text")
@@ -39,11 +39,12 @@ export function Process() {
                     <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-[#FFC107]" strokeWidth={2} />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A] flex items-start">
-                      {num && <span className="text-[#1A1A1A] mr-2 shrink-0">{num}</span>}
-                      <span>{content}</span>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A]">
+                      {title}
                     </h3>
-                    <p className="text-[#6B7280] leading-relaxed text-base sm:text-lg">{desc}</p>
+                    <p className="text-[#6B7280] leading-relaxed text-base">
+                      {desc}
+                    </p>
                   </div>
                 </div>
               );

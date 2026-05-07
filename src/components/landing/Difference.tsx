@@ -19,8 +19,8 @@ export function Difference() {
           )}
         </div>
 
-        <div className="max-w-3xl mx-auto mb-10 sm:mb-12">
-          <div className="space-y-8 sm:space-y-10">
+        <div className="max-w-7xl mx-auto mb-12 sm:mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {d.items.map((item, i) => {
               const Icon = icons[i];
               // Split number and text (e.g. "1. " and "Text")
@@ -37,13 +37,14 @@ export function Difference() {
                     <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-[#FFC107]" strokeWidth={2} />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A] flex items-start">
-                      {num && <span className="text-[#1A1A1A] mr-2 shrink-0">{num}</span>}
-                      <span>{content}</span>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A]">
+                      {item.title}
                     </h3>
-                    <p className="text-[#6B7280] leading-relaxed text-base sm:text-lg">
-                      {item.desc}
-                    </p>
+                    {item.desc && (
+                      <p className="text-[#6B7280] leading-relaxed text-base">
+                        {item.desc}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
