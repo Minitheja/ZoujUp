@@ -94,7 +94,8 @@ function Index() {
               <>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#111111] mb-6 sm:mb-8">
                   {c.title}
-                        <form
+                </h2>
+                <form
               action="https://formspree.io/f/zoujup@gmail.com"
               method="POST"
               target="_blank"
@@ -193,7 +194,6 @@ function Index() {
             </form>
             <p className="mt-5 sm:mt-6 text-[#111111] opacity-80 font-medium italic text-sm sm:text-base text-center">
               {c.note}
-            </p>
             </p>
           </>
         )}
