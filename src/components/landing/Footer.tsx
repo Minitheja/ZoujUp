@@ -13,7 +13,7 @@ export function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-[#111111] text-[#FFFFFF] pt-14 sm:pt-20 pb-8">
+    <footer className="bg-[#111111] text-[#FFFFFF] pt-14 sm:pt-20 pb-8">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
           {/* Brand */}
@@ -84,7 +84,7 @@ export function Footer() {
                   if (label.includes("faq")) {
                     hash = "faq";
                   } else if (label.includes("contact") || label.includes("contacto")) {
-                    to = "/contact";
+                    hash = "contact";
                   } else if (label.includes("about") || label.includes("propos") || label.includes("acerca")) {
                     hash = "home";
                   } else if (label.includes("feature") || label.includes("fonctionnal") || label.includes("caracter")) {
@@ -117,7 +117,7 @@ export function Footer() {
                             const el = document.getElementById(hash);
                             if (el) {
                               e.preventDefault();
-                              el.scrollIntoView({ behavior: "smooth" });
+                              el.scrollIntoView({ behavior: "smooth", block: "center" });
                               // Update URL hash without jumping
                               window.history.pushState(null, "", `${to}#${hash}`);
                             }

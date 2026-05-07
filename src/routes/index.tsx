@@ -7,9 +7,10 @@ import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { useLang } from "@/lib/LanguageContext";
 import { useState } from "react";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/")({
+// ... (rest of Route config remains the same)
   head: () => ({
     meta: [
       { title: "ZoujUp — Structured Language Practice for Darija, French, English & Spanish" },
@@ -202,6 +203,40 @@ function Index() {
     <Process />
     <Difference />
     <FAQ />
+
+    {/* Get in Touch Section */}
+    <section id="contact" className="pt-10 pb-20 sm:pb-28 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
+            Get in <span className="text-[#FFC107]">Touch</span>
+          </h2>
+          <p className="text-[#6B7280] text-lg sm:text-xl leading-relaxed">
+            Have questions or feedback? We'd love to hear from you. 
+            Our team is here to support your language learning journey.
+          </p>
+        </div>
+
+        <div className="max-w-xl mx-auto">
+          <div className="bg-[#F8F9FA] p-8 sm:p-10 rounded-[24px] border border-[#E5E7EB] hover:border-[#FFC107] transition-all duration-300 text-center shadow-sm">
+            <div className="h-12 w-12 bg-white rounded-[12px] flex items-center justify-center border border-[#E5E7EB] mb-6 shadow-sm mx-auto">
+              <Mail className="h-6 w-6 text-[#FFC107]" />
+            </div>
+            <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">Email Us</h3>
+            <p className="text-[#6B7280] mb-6 leading-relaxed">
+              For general inquiries, support, or partnership opportunities, reach out to us at:
+            </p>
+            <a 
+              href="mailto:zoujup@gmail.com"
+              className="text-xl sm:text-2xl font-bold text-[#1A1A1A] hover:text-[#FFC107] transition-colors"
+            >
+              zoujup@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <Footer />
   </div>
 </div>

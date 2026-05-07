@@ -11,7 +11,7 @@ export function FAQ() {
   const f = t.faq;
 
   return (
-    <section id="faq" className="py-20 sm:py-28 bg-white relative overflow-hidden">
+    <section id="faq" className="pt-20 sm:pt-28 pb-0 bg-white relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-[#FFC107]/5 blur-[120px] rounded-full" />

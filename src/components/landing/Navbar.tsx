@@ -17,7 +17,7 @@ export function Navbar() {
     { label: t.nav.howItWorks, to: "/", hash: "how-it-works" },
     { label: t.nav.features, to: "/", hash: "difference" },
     { label: t.nav.faq, to: "/", hash: "faq" },
-    { label: t.nav.contact, to: "/contact" },
+    { label: t.nav.contact, to: "/", hash: "contact" },
   ];
 
   const languages: { code: Lang; label: string }[] = [
@@ -84,12 +84,12 @@ export function Navbar() {
                     const el = document.getElementById(item.hash);
                     if (el) {
                       e.preventDefault();
-                      el.scrollIntoView({ behavior: "smooth" });
+                      el.scrollIntoView({ behavior: "smooth", block: "center" });
                       window.history.pushState(null, "", `${item.to}#${item.hash}`);
                     }
                   }
                 }}
-                className="text-base font-semibold text-[#1A1A1A] hover:text-[#FFC107] transition-colors duration-200"
+                className="text-base font-semibold text-[#1A1A1A] hover:underline underline-offset-4 transition-all duration-200"
               >
                 {item.label}
               </Link>
@@ -185,12 +185,12 @@ export function Navbar() {
                       const el = document.getElementById(item.hash);
                       if (el) {
                         e.preventDefault();
-                        el.scrollIntoView({ behavior: "smooth" });
+                        el.scrollIntoView({ behavior: "smooth", block: "center" });
                         window.history.pushState(null, "", `${item.to}#${item.hash}`);
                       }
                     }
                   }}
-                  className="block py-3 px-2 text-base font-medium text-[#1A1A1A] hover:text-[#FFC107] transition-colors rounded-lg"
+                  className="block py-3 px-2 text-base font-medium text-[#1A1A1A] hover:underline underline-offset-4 transition-all rounded-lg"
                 >
                   {item.label}
                 </Link>
