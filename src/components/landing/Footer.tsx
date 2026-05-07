@@ -81,7 +81,9 @@ export function Footer() {
 
                   const label = l.toLowerCase();
 
-                  if (label.includes("faq")) {
+                  if (label.includes("home") || label.includes("accueil") || label.includes("inicio")) {
+                    hash = "cta";
+                  } else if (label.includes("faq")) {
                     hash = "faq";
                   } else if (label.includes("contact") || label.includes("contacto")) {
                     hash = "contact";
@@ -137,7 +139,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 text-center text-xs sm:text-sm opacity-60">
-          © {new Date().getFullYear()} ZoujUp. {f.crafted}
+          © {new Date().getFullYear()} ZoujUp.
         </div>
       </div>
     </footer>
