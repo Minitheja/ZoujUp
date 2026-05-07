@@ -10,7 +10,7 @@ export function Process() {
   return (
     <section
       id="how-it-works"
-      className="pt-6 pb-12 sm:pt-8 sm:pb-16 bg-transparent relative scroll-mt-20"
+      className="pt-14 pb-24 sm:pt-20 sm:pb-32 bg-transparent relative scroll-mt-32"
     >
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">

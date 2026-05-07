@@ -227,10 +227,10 @@ function Index() {
               For general inquiries, support, or partnership opportunities, reach out to us at:
             </p>
             <a 
-              href="mailto:zoujup@gmail.com"
+              href="mailto:contact@zoujup.com"
               className="text-xl sm:text-2xl font-bold text-[#1A1A1A] hover:text-[#FFC107] transition-colors"
             >
-              zoujup@gmail.com
+              contact@zoujup.com
             </a>
           </div>
         </div>

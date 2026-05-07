@@ -8,7 +8,6 @@ export function Footer() {
 
   const columns = [
     { title: f.company, links: f.companyLinks },
-    { title: f.product, links: f.productLinks },
     { title: f.support, links: f.supportLinks },
   ];
 

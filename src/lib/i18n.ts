@@ -112,12 +112,10 @@ export const translations = {
     footer: {
       tagline: "Practice languages with real people. Built for speakers.",
       company: "Company",
-      product: "Product",
       support: "Support",
       crafted: "",
       companyLinks: ["Home", "About", "How it Works", "Features"],
-      productLinks: ["Updates", "Help"],
-      supportLinks: ["FAQs", "Privacy Policy", "Terms", "Contact"],
+      supportLinks: ["FAQs", "Privacy Policy", "contact@zoujup.com"],
     },
   },
 
@@ -237,12 +235,10 @@ export const translations = {
     footer: {
       tagline: "Pratiquez des langues avec de vraies personnes. Fait pour les locuteurs.",
       company: "Entreprise",
-      product: "Produit",
       support: "Support",
       crafted: "",
       companyLinks: ["Accueil", "À propos", "Comment ça marche", "Fonctionnalités"],
-      productLinks: ["Mises à jour", "Aide"],
-      supportLinks: ["FAQs", "Confidentialité", "Conditions", "Contact"],
+      supportLinks: ["FAQs", "Confidentialité", "contact@zoujup.com"],
     },
   },
 
@@ -358,12 +354,10 @@ export const translations = {
     footer: {
       tagline: "Practica idiomas con personas reales. Hecho para hablantes.",
       company: "Compañía",
-      product: "Producto",
       support: "Soporte",
       crafted: "",
       companyLinks: ["Inicio", "Acerca de", "Cómo funciona", "Características"],
-      productLinks: ["Actualizaciones", "Ayuda"],
-      supportLinks: ["FAQs", "Política de Privacidad", "Términos", "Contact"],
+      supportLinks: ["FAQs", "Política de Privacidad", "contact@zoujup.com"],
     },
   },
 } as const;
