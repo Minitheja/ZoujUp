@@ -5,6 +5,7 @@ export const translations = {
     // Navbar
     nav: {
       home: "Home",
+      about: "About",
       howItWorks: "How it Works",
       features: "Features",
       faq: "FAQ",
@@ -125,6 +126,7 @@ export const translations = {
     // Navbar
     nav: {
       home: "Accueil",
+      about: "À propos",
       howItWorks: "Comment ça marche",
       features: "Fonctionnalités",
       faq: "FAQ",
@@ -251,6 +253,7 @@ export const translations = {
     // Navbar
     nav: {
       home: "Inicio",
+      about: "Acerca de",
       howItWorks: "Cómo funciona",
       features: "Características",
       faq: "Preguntas frecuentes",
