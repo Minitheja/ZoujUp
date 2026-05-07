@@ -8,15 +8,12 @@ export function Difference() {
   const d = t.difference;
 
   return (
-    <section id="difference" className="pt-6 pb-12 sm:pt-8 sm:pb-16 bg-transparent relative scroll-mt-20">
+    <section id="difference" className="pt-12 pb-20 sm:pt-20 sm:pb-32 bg-transparent relative scroll-mt-32">
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-[#1A1A1A]">
             {d.title} <span className="text-[#FFC107]">{d.titleAccent}</span>
           </h2>
-          {d.subtitle && (
-            <p className="text-[#6B7280] leading-relaxed text-sm sm:text-base">{d.subtitle}</p>
-          )}
         </div>
 
         <div className="max-w-7xl mx-auto mb-12 sm:mb-16">
