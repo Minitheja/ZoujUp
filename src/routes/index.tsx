@@ -40,7 +40,7 @@ function Index() {
     const formData = new FormData(e.currentTarget);
     
     try {
-      const response = await fetch("https://formspree.io/f/zoujup@gmail.com", {
+      const response = await fetch("https://formspree.io/f/mdabdveb", {
         method: "POST",
         body: formData,
         headers: {
@@ -96,11 +96,9 @@ function Index() {
                   {c.title}
                 </h2>
                 <form
-              action="https://formspree.io/f/xpqblnbj"
-              method="POST"
-              target="_blank"
-              className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto"
-            >
+                  onSubmit={handleSubmit}
+                  className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto"
+                >
               <div className="w-full flex flex-col gap-3">
                 <div className="relative w-full">
                   <select
