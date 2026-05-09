@@ -68,9 +68,24 @@ function Index() {
           id="cta"
           className="min-h-screen flex items-center justify-center bg-[#FFC107] relative overflow-hidden"
         >
-          <div className="container mx-auto px-4 sm:px-6 text-center max-w-2xl relative z-10 py-20">
+          <div className="container mx-auto px-4 sm:px-6 max-w-6xl py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh]">
+
+              {/* Left column — mobile app image */}
+              {status !== "success" && (
+                <div className="flex items-center justify-center h-full">
+                  <img
+                    src="/ZoujUpApp.png"
+                    alt="ZoujUp mobile app"
+                    className="h-[38vh] sm:h-[52vh] lg:h-[85vh] w-auto drop-shadow-2xl"
+                  />
+                </div>
+              )}
+
+              {/* Right column — form / success */}
+              <div className={status === "success" ? "lg:col-span-2 flex justify-center" : ""}>
             {status === "success" ? (
-              <div className="animate-in fade-in zoom-in duration-500 flex flex-col items-center">
+              <div className="animate-in fade-in zoom-in duration-500 flex flex-col items-center text-center">
                 <div className="h-24 w-24 bg-white rounded-full flex items-center justify-center mb-8 shadow-xl">
                   <CheckCircle2 className="h-14 w-14 text-[#FFC107]" />
                 </div>
@@ -78,13 +93,13 @@ function Index() {
                   {lang === "en" ? "You're on the list!" : lang === "fr" ? "Vous êtes sur la liste !" : "¡Estás en la lista!"}
                 </h2>
                 <p className="text-[#111111] text-xl opacity-90 max-w-md mx-auto leading-relaxed">
-                  {lang === "en" 
-                    ? "Thank you for joining ZoujUp. We'll reach out as soon as we're ready for you." 
-                    : lang === "fr" 
-                    ? "Merci d'avoir rejoint ZoujUp. Nous vous contacterons dès que nous serons prêts." 
+                  {lang === "en"
+                    ? "Thank you for joining ZoujUp. We'll reach out as soon as we're ready for you."
+                    : lang === "fr"
+                    ? "Merci d'avoir rejoint ZoujUp. Nous vous contacterons dès que nous serons prêts."
                     : "Gracias por unirte a ZoujUp. Nos pondremos en contacto contigo tan pronto como estemos listos."}
                 </p>
-                <button 
+                <button
                   onClick={() => setStatus("idle")}
                   className="mt-8 text-[#111111] font-bold underline hover:opacity-70 transition-opacity"
                 >
@@ -92,13 +107,13 @@ function Index() {
                 </button>
               </div>
             ) : (
-              <>
+              <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#111111] mb-6 sm:mb-8">
                   {c.title}
                 </h2>
                 <form
                   onSubmit={handleSubmit}
-                  className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto"
+                  className="flex flex-col gap-3 justify-center items-center max-w-md mx-auto lg:mx-0"
                 >
               <div className="w-full flex flex-col gap-3">
                 <div className="relative w-full">
@@ -191,13 +206,16 @@ function Index() {
                 )}
               </p>
             </form>
-            <p className="mt-5 sm:mt-6 text-[#111111] opacity-80 font-medium italic text-sm sm:text-base text-center">
+            <p className="mt-5 sm:mt-6 text-[#111111] opacity-80 font-medium italic text-sm sm:text-base text-center lg:text-left">
               {c.note}
             </p>
-          </>
-        )}
-      </div>
-    </section>
+              </div>
+            )}
+              </div>
+
+            </div>
+          </div>
+        </section>
 
     <Hero />
     <Process />
@@ -209,11 +227,10 @@ function Index() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
-            Get in <span className="text-[#FFC107]">Touch</span>
+            {t.contact.title} <span className="text-[#FFC107]">{t.contact.titleAccent}</span>
           </h2>
           <p className="text-[#6B7280] text-lg sm:text-xl leading-relaxed">
-            Have questions or feedback? We'd love to hear from you. 
-            Our team is here to support your language learning journey.
+            {t.contact.subtitle}
           </p>
         </div>
 
@@ -222,11 +239,11 @@ function Index() {
             <div className="h-12 w-12 bg-white rounded-[12px] flex items-center justify-center border border-[#E5E7EB] mb-6 shadow-sm mx-auto">
               <Mail className="h-6 w-6 text-[#FFC107]" />
             </div>
-            <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">Email Us</h3>
+            <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">{t.contact.cardTitle}</h3>
             <p className="text-[#6B7280] mb-6 leading-relaxed">
-              For general inquiries, support, or partnership opportunities, reach out to us at:
+              {t.contact.cardDesc}
             </p>
-            <a 
+            <a
               href="mailto:contact@zoujup.com"
               className="text-xl sm:text-2xl font-bold text-[#1A1A1A] hover:text-[#FFC107] transition-colors"
             >

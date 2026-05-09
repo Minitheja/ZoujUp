@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
+import { useLang } from "@/lib/LanguageContext";
 
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
@@ -16,6 +17,176 @@ export const Route = createFileRoute("/privacy-policy")({
 });
 
 function PrivacyPolicy() {
+  const { lang } = useLang();
+
+  if (lang === "es") {
+    return (
+      <div className="relative min-h-screen bg-white overflow-x-hidden">
+        <Navbar />
+        <main className="pt-24 sm:pt-32 pb-16 sm:pb-24">
+          <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A1A1A] mb-2 font-display">POLÍTICA DE PRIVACIDAD</h1>
+            <p className="text-sm text-[#6B7280] mb-10 italic">Última actualización: mayo de 2026</p>
+
+            <div className="space-y-10 text-[#1A1A1A]">
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">1. QUIÉNES SOMOS</h2>
+                <p className="leading-relaxed">
+                  ZoujUp es una aplicación móvil de práctica de idiomas actualmente en desarrollo.
+                  <br />
+                  Contacto: <a href="mailto:contact@zoujup.com" className="text-[#FFC107] hover:underline">contact@zoujup.com</a>
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">2. QUÉ DATOS RECOPILAMOS</h2>
+                <div className="leading-relaxed space-y-1">
+                  <p>Cuando te unes a nuestra lista de espera, recopilamos:</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Tu dirección de correo electrónico</li>
+                    <li>Tu idioma nativo</li>
+                    <li>El idioma que quieres practicar</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">3. POR QUÉ LOS RECOPILAMOS</h2>
+                <div className="leading-relaxed space-y-1">
+                  <p>Usamos esta información para:</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Notificarte cuando ZoujUp se lance y enviarte información sobre el acceso anticipado</li>
+                    <li>Entender las necesidades lingüísticas de nuestra comunidad para garantizar coincidencias de alta calidad desde el primer día</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">4. CÓMO LOS ALMACENAMOS</h2>
+                <p className="leading-relaxed">
+                  Tu correo electrónico se almacena de forma segura a través de nuestra plataforma de correo (Mailchimp o equivalente). No almacenamos ninguna otra información personal.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">5. CUÁNTO TIEMPO LOS CONSERVAMOS</h2>
+                <p className="leading-relaxed">
+                  Conservamos tu correo electrónico hasta el lanzamiento de la aplicación. Puedes solicitar su eliminación en cualquier momento.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">6. TUS DERECHOS</h2>
+                <p className="leading-relaxed">
+                  Tienes derecho a acceder, corregir o eliminar tus datos en cualquier momento. Para hacerlo, escríbenos a <a href="mailto:contact@zoujup.com" className="text-[#FFC107] hover:underline">contact@zoujup.com</a>
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">7. NUNCA VENDEMOS TUS DATOS</h2>
+                <p className="leading-relaxed">
+                  Nunca compartiremos ni venderemos tu correo electrónico a ningún tercero.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">8. COOKIES</h2>
+                <p className="leading-relaxed">
+                  Este sitio web no utiliza cookies de seguimiento en esta etapa.
+                </p>
+              </section>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (lang === "fr") {
+    return (
+      <div className="relative min-h-screen bg-white overflow-x-hidden">
+        <Navbar />
+        <main className="pt-24 sm:pt-32 pb-16 sm:pb-24">
+          <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A1A1A] mb-2 font-display">POLITIQUE DE CONFIDENTIALITÉ</h1>
+            <p className="text-sm text-[#6B7280] mb-10 italic">Dernière mise à jour : mai 2026</p>
+
+            <div className="space-y-10 text-[#1A1A1A]">
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">1. QUI SOMMES-NOUS</h2>
+                <p className="leading-relaxed">
+                  ZoujUp est une application mobile de pratique des langues actuellement en développement.
+                  <br />
+                  Contact : <a href="mailto:contact@zoujup.com" className="text-[#FFC107] hover:underline">contact@zoujup.com</a>
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">2. QUELLES DONNÉES NOUS COLLECTONS</h2>
+                <div className="leading-relaxed space-y-1">
+                  <p>Lorsque vous rejoignez notre liste d'attente, nous collectons :</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Votre adresse e-mail</li>
+                    <li>Votre langue maternelle</li>
+                    <li>La langue que vous souhaitez pratiquer</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">3. POURQUOI NOUS LES COLLECTONS</h2>
+                <div className="leading-relaxed space-y-1">
+                  <p>Nous utilisons ces informations pour :</p>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Vous notifier au lancement de ZoujUp et vous envoyer des informations sur l'accès anticipé</li>
+                    <li>Comprendre les besoins linguistiques de notre communauté pour garantir des mises en relation de qualité dès le premier jour</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">4. COMMENT NOUS LES STOCKONS</h2>
+                <p className="leading-relaxed">
+                  Votre e-mail est stocké de manière sécurisée via notre plateforme d'e-mailing (Mailchimp ou équivalent). Nous ne stockons aucune autre information personnelle.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">5. COMBIEN DE TEMPS NOUS LES CONSERVONS</h2>
+                <p className="leading-relaxed">
+                  Nous conservons votre e-mail jusqu'au lancement de l'application. Vous pouvez demander sa suppression à tout moment.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">6. VOS DROITS</h2>
+                <p className="leading-relaxed">
+                  Vous avez le droit d'accéder, de corriger ou de supprimer vos données à tout moment. Pour ce faire, envoyez-nous un e-mail à <a href="mailto:contact@zoujup.com" className="text-[#FFC107] hover:underline">contact@zoujup.com</a>
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">7. NOUS NE VENDONS JAMAIS VOS DONNÉES</h2>
+                <p className="leading-relaxed">
+                  Nous ne partagerons ni ne vendrons jamais votre adresse e-mail à un tiers.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">8. COOKIES</h2>
+                <p className="leading-relaxed">
+                  Ce site web n'utilise aucun cookie de suivi à ce stade.
+                </p>
+              </section>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="relative min-h-screen bg-white overflow-x-hidden">
       <Navbar />

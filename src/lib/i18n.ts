@@ -108,6 +108,15 @@ export const translations = {
       ],
     },
 
+    // Contact
+    contact: {
+      title: "Get in",
+      titleAccent: "Touch",
+      subtitle: "Have questions or feedback? We'd love to hear from you. Our team is here to support your language learning journey.",
+      cardTitle: "Email Us",
+      cardDesc: "For general inquiries, support, or partnership opportunities, reach out to us at:",
+    },
+
     // Footer
     footer: {
       tagline: "Practice languages with real people. Built for speakers.",
@@ -133,10 +142,10 @@ export const translations = {
 
     // Hero
     hero: {
-      headline1: "Fini les conversations aléatoires.",
-      headline2: "Place à la pratique structurée des langues.",
+      headline1: "Fini les discussions aléatoires.",
+      headline2: "Place à la vraie pratique linguistique.",
       subheadline: "Conversations guidées avec des locuteurs natifs.",
-      body: "Pas de ghosting. Pas de bavardage. Pas de feeling dating. \nJuste de la vraie pratique orale.",
+      body: "Pas de ghosting. Pas de bavardages. Pas d'ambiance rencontre. \nJuste de la vraie pratique orale.",
       cta: "Rejoindre la liste",
       earlyAccessTitle:
         "Nous accueillons nos 100 premiers utilisateurs pour garantir des mises en relation de qualité.",
@@ -158,7 +167,7 @@ export const translations = {
           title: "2. Pratiquez une session guidée de 10 min",
           desc: "5 minutes chacun. Des sujets structurés.",
         },
-        { title: "3. Continuez seulement si ça clique", desc: "Sans pression. Sans temps perdu." },
+        { title: "3. Continuez uniquement si le courant passe", desc: "Sans pression. Sans temps perdu." },
       ],
     },
 
@@ -191,7 +200,7 @@ export const translations = {
       items: [
         {
           q: "Quelles langues puis-je pratiquer ?",
-          a: "Au lancement : arabe marocain (Darija) 🇲🇦, français 🇫🇷, anglais 🇬🇧 et espagnol 🇪🇸. D'autres langues arrivent bientôt.\nVous ne trouvez pas votre langue ? Demandez-la ci-dessous — nous construisons en fonction de la demande de la communauté. Demandez la vôtre ci-dessous.",
+          a: "Au lancement : arabe marocain (Darija) 🇲🇦, français 🇫🇷, anglais 🇬🇧 et espagnol 🇪🇸. D'autres langues arrivent bientôt.\nVous ne trouvez pas votre langue ? Écrivez-nous à contact@zoujup.com - nous construisons en fonction de la demande de la communauté.",
         },
         {
           q: "Comment fonctionne le processus 5+5 ?",
@@ -229,6 +238,15 @@ export const translations = {
         "Espagnol",
         "Autre (bientôt disponible)",
       ],
+    },
+
+    // Contact
+    contact: {
+      title: "Nous",
+      titleAccent: "Contacter",
+      subtitle: "Des questions ou des retours ? Nous serions ravis de vous entendre. Notre équipe est là pour soutenir votre apprentissage des langues.",
+      cardTitle: "Écrivez-nous",
+      cardDesc: "Pour toute question générale, support ou opportunité de partenariat, contactez-nous à :",
     },
 
     // Footer
@@ -273,12 +291,12 @@ export const translations = {
       titleAccent: "funciona",
       subtitle: "Un proceso simple y enfocado para que empieces a hablar en segundos.",
       steps: [
-        { title: "1. Conecta al instante", desc: "Sin deslizar. Sin perfiles interminables." },
+        { title: "1. Encuentra un compañero al instante.", desc: "Sin swipes. Sin perfiles infinitos." },
         {
           title: "2. Sesión guiada de 10 minutos",
           desc: "5 minutos cada uno. Temas estructurados.",
         },
-        { title: "3. Continúa solo si hay conexión", desc: "Sin presión. Sin tiempo perdido." },
+        { title: "3. Continúa solo si os entendéis.", desc: "Sin presión. Sin perder el tiempo." },
       ],
     },
 
@@ -348,6 +366,15 @@ export const translations = {
         "Español",
         "Otro (próximamente)",
       ],
+    },
+
+    // Contact
+    contact: {
+      title: "Contácta",
+      titleAccent: "nos",
+      subtitle: "¿Tienes preguntas o comentarios? Nos encantaría escucharte. Nuestro equipo está aquí para apoyar tu aprendizaje de idiomas.",
+      cardTitle: "Escríbenos",
+      cardDesc: "Para consultas generales, soporte u oportunidades de colaboración, contáctanos en:",
     },
 
     // Footer
