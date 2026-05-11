@@ -33,8 +33,8 @@ export const translations = {
       steps: [
         { title: "1. Get matched instantly", desc: "No swiping. No endless profiles." },
         {
-          title: "2. Practice a 10-minute guided session",
-          desc: "5 minutes each. Structured prompts.",
+          title: "2. Practice a guided session with structured prompts",
+          desc: "Balanced speaking time — each partner speaks the language they want to learn.",
         },
         { title: "3. Continue only if it clicks", desc: "No pressure. No wasted time." },
       ],
@@ -71,12 +71,8 @@ export const translations = {
           a: "At launch: Moroccan Arabic (Darija) 🇲🇦, French 🇫🇷, English 🇬🇧, and Spanish 🇪🇸. More languages coming soon.\nCan’t find your language? Request it below — we build based on community demand. Request yours below.",
         },
         {
-          q: "How does the 5+5 process work?",
-          a: "Each session is 10 minutes — 5 minutes speaking your target language, 5 minutes listening to your partner speak theirs. Structured prompts keep the conversation flowing. No awkward silence. No one-sided chats.",
-        },
-        {
           q: "Is ZoujUp free to use?",
-          a: "ZoujUp offers a free trial so you can experience a real session before committing. Premium plans start from €6.99/month",
+          a: "Yes. ZoujUp offers a free plan to get you started, with premium plans available for those who want to practice more. Full pricing details will be available at launch.",
         },
         {
           q: "Is ZoujUp different from other language apps?",
@@ -119,7 +115,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: "Practice languages with real people. Built for speakers.",
+      tagline: "Practice your language with someone who needs yours. Not an AI. Not random chat. A real human, a real conversation.",
       company: "Company",
       support: "Support",
       crafted: "",
@@ -145,7 +141,7 @@ export const translations = {
       headline1: "Fini les discussions aléatoires.",
       headline2: "Place à la vraie pratique linguistique.",
       subheadline: "Conversations guidées avec des locuteurs natifs.",
-      body: "Pas de ghosting. Pas de bavardages. Pas d'ambiance rencontre. \nJuste de la vraie pratique orale.",
+      body: "Pas de ghosting. Pas de bavardages. pas d'ambiance appli de rencontres. \nJuste de la vraie pratique orale.",
       cta: "Rejoindre la liste",
       earlyAccessTitle:
         "Nous accueillons nos 100 premiers utilisateurs pour garantir des mises en relation de qualité.",
@@ -160,12 +156,12 @@ export const translations = {
       subtitle: "Un processus simple et ciblé pour vous faire parler en quelques secondes.",
       steps: [
         {
-          title: "1. Mis en relation instantanément",
+          title: "1. Mise en relation instantanément",
           desc: "Pas de swipe. Pas de profils interminables.",
         },
         {
-          title: "2. Pratiquez une session guidée de 10 min",
-          desc: "5 minutes chacun. Des sujets structurés.",
+          title: "2. Pratiquez une séance guidée avec des invites structurées.",
+          desc: "Temps de parole équilibré — chaque partenaire parle la langue qu'il souhaite apprendre.",
         },
         { title: "3. Continuez uniquement si le courant passe", desc: "Sans pression. Sans temps perdu." },
       ],
@@ -203,12 +199,8 @@ export const translations = {
           a: "Au lancement : arabe marocain (Darija) 🇲🇦, français 🇫🇷, anglais 🇬🇧 et espagnol 🇪🇸. D'autres langues arrivent bientôt.\nVous ne trouvez pas votre langue ? Écrivez-nous à contact@zoujup.com - nous construisons en fonction de la demande de la communauté.",
         },
         {
-          q: "Comment fonctionne le processus 5+5 ?",
-          a: "Chaque session dure 10 minutes — 5 minutes à parler votre langue cible, 5 minutes à écouter votre partenaire parler la sienne. Des invites structurées maintiennent la fluidité de la conversation. Pas de silence gênant. Pas de discussions unilatérales.",
-        },
-        {
           q: "ZoujUp est-il gratuit ?",
-          a: "ZoujUp propose un essai gratuit afin que vous puissiez vivre une session réelle avant de vous engager. Les forfaits Premium commencent à partir de 6,99 €/mois.",
+          a: "Oui. ZoujUp propose un forfait gratuit pour vous permettre de commencer, avec des forfaits premium disponibles pour ceux qui souhaitent s'entraîner davantage. Les détails complets des tarifs seront disponibles lors du lancement.",
         },
         {
           q: "ZoujUp est-il différent des autres applications de langues ?",
@@ -251,7 +243,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: "Pratiquez des langues avec de vraies personnes. Fait pour les locuteurs.",
+      tagline: "Pratique ta langue avec quelqu'un qui a besoin de la tienne.Pas une IA. Pas du chat aléatoire. Un vrai humain, une vraie conversation.",
       company: "Entreprise",
       support: "Support",
       crafted: "",
@@ -293,8 +285,8 @@ export const translations = {
       steps: [
         { title: "1. Encuentra un compañero al instante.", desc: "Sin swipes. Sin perfiles infinitos." },
         {
-          title: "2. Sesión guiada de 10 minutos",
-          desc: "5 minutos cada uno. Temas estructurados.",
+          title: "2. Practica una sesión guiada con instrucciones estructuradas.",
+          desc: "Tiempo de habla equilibrado — cada compañero habla el idioma que desea aprender.",
         },
         { title: "3. Continúa solo si os entendéis.", desc: "Sin presión. Sin perder el tiempo." },
       ],
@@ -331,12 +323,8 @@ export const translations = {
           a: "En el lanzamiento: árabe marroquí (Darija) 🇲🇦, francés 🇫🇷, inglés 🇬🇧 y español 🇪🇸. Próximamente habrá más idiomas.\n¿No encuentras tu idioma? Solicítalo a continuación: construimos según la demanda de la comunidad. Solicita el tuyo abajo.",
         },
         {
-          q: "¿Cómo funciona el proceso 5+5?",
-          a: "Cada sesión dura 10 minutos: 5 minutos hablando tu idioma objetivo y 5 minutos escuchando a tu compañero hablar el suyo. Los temas estructurados mantienen la fluidez de la conversación. Sin silencios incómodos. Sin chats unilaterales.",
-        },
-        {
           q: "¿Es ZoujUp gratuito?",
-          a: "ZoujUp ofrece una prueba gratuita para que puedas experimentar una sesión real antes de comprometerte. Los planes Premium comienzan desde 6,99 €/mes.",
+          a: "Sí. ZoujUp ofrece un plan gratuito para que puedas empezar, con planes premium disponibles para aquellos que quieran practicar más. Los detalles completos de los precios estarán disponibles en el lanzamiento.",
         },
         {
           q: "¿Es ZoujUp diferente de otras aplicaciones de idiomas?",
