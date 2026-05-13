@@ -72,7 +72,7 @@ export const translations = {
         },
         {
           q: "Is ZoujUp free to use?",
-          a: "Yes. ZoujUp offers a free plan to get you started, with premium plans available for those who want to practice more. Full pricing details will be available at launch.",
+          a: "ZoujUp offers a free plan to get you started, with premium plans available for those who want to practice more. Full pricing details will be available at launch.",
         },
         {
           q: "Is ZoujUp different from other language apps?",
@@ -81,6 +81,10 @@ export const translations = {
         {
           q: "Is it safe and professional?",
           a: "Yes. There are no open profiles to browse and chat only unlocks after a mutual session validation. Zero tolerance for inappropriate behavior — accounts are permanently banned",
+        },
+        {
+          q: "Can I choose to practice only with women or only with men?",
+          a: "Yes. During onboarding, you can set your partner preference: women only, men only, or no preference. ZoujUp respects your personal and cultural boundaries. Your practice partner will always match your preference.",
         },
       ],
     },
@@ -200,7 +204,7 @@ export const translations = {
         },
         {
           q: "ZoujUp est-il gratuit ?",
-          a: "Oui. ZoujUp propose un forfait gratuit pour vous permettre de commencer, avec des forfaits premium disponibles pour ceux qui souhaitent s'entraîner davantage. Les détails complets des tarifs seront disponibles lors du lancement.",
+          a: "ZoujUp propose un forfait gratuit pour vous permettre de commencer, avec des forfaits premium disponibles pour ceux qui souhaitent s'entraîner davantage. Les détails complets des tarifs seront disponibles lors du lancement.",
         },
         {
           q: "ZoujUp est-il différent des autres applications de langues ?",
@@ -209,6 +213,10 @@ export const translations = {
         {
           q: "Est-ce sûr et professionnel ?",
           a: "Oui. Il n'y a pas de profils ouverts à parcourir et le chat ne se débloque qu'après une validation mutuelle de la session. Tolérance zéro pour les comportements inappropriés — les comptes sont bannis définitivement.",
+        },
+         {
+          q: "Puis-je choisir de pratiquer uniquement avec des femmes ou uniquement avec des hommes ?",
+          a: "Oui. Lors de l’inscription, tu peux définir ta préférence : femmes uniquement, hommes uniquement, ou sans préférence. ZoujUp respecte tes limites personnelles et culturelles. Ton partenaire de pratique correspondra toujours à ta préférence.",
         },
       ],
     },
@@ -243,7 +251,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: "Pratique ta langue avec quelqu'un qui a besoin de la tienne.Pas une IA. Pas du chat aléatoire. Un vrai humain, une vraie conversation.",
+      tagline: "Pratique ta langue avec quelqu'un qui a besoin de la tienne. Pas une IA. Pas du chat aléatoire. Un vrai humain, une vraie conversation.",
       company: "Entreprise",
       support: "Support",
       crafted: "",
@@ -334,6 +342,10 @@ export const translations = {
           q: "¿Es seguro y profesional?",
           a: "Sí. No hay perfiles abiertos para explorar y el chat solo se desbloquea tras una validación mutua de la sesión. Tolerancia cero para comportamientos inapropiados: las cuentas se banean permanentemente.",
         },
+         {
+          q: "¿Puedo elegir practicar solo con mujeres o solo con hombres?",
+          a: "Sí. Durante el registro, puedes establecer tu preferencia: solo mujeres, solo hombres, o sin preferencia. ZoujUp respeta tus límites personales y culturales. Tu compañero de práctica siempre coincidirá con tu preferencia.",
+        },
       ],
     },
 
@@ -367,7 +379,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: "Practica idiomas con personas reales. Hecho para hablantes.",
+      tagline: "Practica tu idioma con alguien que necesita el tuyo. No con una IA. No con un chat aleatorio. Con una persona real y una conversación real.",
       company: "Compañía",
       support: "Soporte",
       crafted: "",

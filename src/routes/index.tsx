@@ -75,7 +75,7 @@ function Index() {
               {status !== "success" && (
                 <div className="flex items-center justify-center h-full">
                   <img
-                    src="/ZoujUpApp.png"
+                    src={lang === "fr" ? "/FrenchApp.png" : lang === "es" ? "/SpanishApp.png" : "/EnglishApp.png"}
                     alt="ZoujUp mobile app"
                     className="h-[38vh] sm:h-[52vh] lg:h-[85vh] w-auto drop-shadow-2xl"
                   />
@@ -227,7 +227,7 @@ function Index() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
-            {t.contact.title} <span className="text-[#FFC107]">{t.contact.titleAccent}</span>
+            {t.contact.title}{lang !== "es" && " "}<span className="text-[#FFC107]">{t.contact.titleAccent}</span>
           </h2>
           <p className="text-[#6B7280] text-lg sm:text-xl leading-relaxed">
             {t.contact.subtitle}
