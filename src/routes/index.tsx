@@ -6,7 +6,7 @@ import { Difference } from "@/components/landing/Difference";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { useLang } from "@/lib/LanguageContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CheckCircle2, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -33,6 +33,12 @@ function Index() {
   const { lang, t } = useLang();
   const c = t.cta;
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
+  useEffect(() => {
+    ["/EnglishApp.png", "/FrenchApp.png", "/SpanishApp.png"].forEach((src) => {
+      new Image().src = src;
+    });
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -75,7 +81,7 @@ function Index() {
               {status !== "success" && (
                 <div className="flex items-center justify-center h-full">
                   <img
-                    src={lang === "fr" ? "/FrenchApp.png" : lang === "es" ? "/SpanishApp.png" : "/EnglishApp.png"}
+                    src={lang === "fr" ? "/assetsrc/FrenchApp.svg" : lang === "es" ? "/assetsrc/SpanishApp.svg" : "/assetsrc/EnglishApp.svg"}
                     alt="ZoujUp mobile app"
                     className="h-[38vh] sm:h-[52vh] lg:h-[85vh] w-auto drop-shadow-2xl"
                   />
