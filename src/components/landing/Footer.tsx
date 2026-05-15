@@ -101,19 +101,25 @@ export function Footer() {
 
                   return (
                     <li key={l}>
+                      {isExternal ? (
+                        <a
+                          href={to}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:opacity-100 hover:text-[#FFC107] transition-colors duration-200"
+                        >
+                          {l}
+                        </a>
+                      ) : (
                       <Link
                         to={to}
                         hash={hash}
-                        target={isExternal ? "_blank" : undefined}
-                        rel={isExternal ? "noopener noreferrer" : undefined}
                         onClick={(e) => {
                           if (to === "#") {
                             e.preventDefault();
                             alert("This page will be available soon!");
                             return;
                           }
-                          
-                          // If it's a hash link on the same page, scroll manually to be safe
                           if (hash && (window.location.pathname === to || to === "/")) {
                             e.preventDefault();
                             window.history.pushState(null, "", `${to}#${hash}`);
@@ -129,6 +135,7 @@ export function Footer() {
                       >
                         {l}
                       </Link>
+                      )}
                     </li>
                   );
                 })}
