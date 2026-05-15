@@ -82,7 +82,7 @@ export function Footer() {
 
                   if (label.includes("home") || label.includes("accueil") || label.includes("inicio")) {
                     hash = "cta";
-                  } else if (label.includes("faq")) {
+                  } else if (label.includes("faq") || label.includes("الأسئلة") || label.includes("questions") || label.includes("preguntas")) {
                     hash = "faq";
                   } else if (label.includes("contact") || label.includes("contacto")) {
                     hash = "contact";

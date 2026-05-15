@@ -137,7 +137,7 @@ export const translations = {
       about: "À propos",
       howItWorks: "Comment ça marche",
       features: "Fonctionnalités",
-      faq: "FAQs",
+      faq: "Questions fréquentes",
       contact: "Contact",
       joinWaitlist: "Rejoindre la liste",
     },
@@ -260,7 +260,7 @@ export const translations = {
       support: "Support",
       crafted: "",
       companyLinks: ["Accueil", "À propos", "Comment ça marche", "Fonctionnalités"],
-      supportLinks: ["FAQs", "Confidentialité", "Contact"],
+      supportLinks: ["Questions fréquentes", "Confidentialité", "Contact"],
     },
   },
 
@@ -271,7 +271,7 @@ export const translations = {
       about: "Acerca de",
       howItWorks: "Cómo funciona",
       features: "Características",
-      faq: "FAQs",
+      faq: "Preguntas Frecuentes",
       contact: "Contacto",
       joinWaitlist: "Únete a la lista",
     },
@@ -390,7 +390,7 @@ export const translations = {
       support: "Soporte",
       crafted: "",
       companyLinks: ["Inicio", "Acerca de", "Cómo funciona", "Características"],
-      supportLinks: ["FAQs", "Política de Privacidad", "Contacto"],
+      supportLinks: ["Preguntas Frecuentes", "Política de Privacidad", "Contacto"],
     },
   },
   da: {
@@ -400,7 +400,7 @@ export const translations = {
       about: "علينا",
       howItWorks: "كيفاش خدام",
       features: "المميزات",
-      faq: "FAQs",
+      faq: "الأسئلة المتكررة",
       contact: "تواصل معنا",
       joinWaitlist: "انضم للقائمة",
     },
@@ -410,7 +410,7 @@ export const translations = {
       headline1: "خلاص من المحادثات العشوائية.",
       headline2: "ابدأ تمرين اللغة بطريقة منظمة.",
       subheadline: "محادثات موجهة مع ناطقين أصليين.",
-      body: "ما كاينش ghosting. ما كاينش هضرة فارغة. ما كاينش جو ديال التعارف. \nغير تمرين حقيقي.",
+      body: "ما كاينش اللي كيختفي. ما كاينش هضرة فارغة. ما كاينش جو ديال التعارف. \nغير تمرين حقيقي.",
       cta: "انضم للقائمة",
       earlyAccessTitle:
         "كانين نقبلو أول 100 مستخدم باش نضمنو مطابقات ذات جودة عالية من اليوم الأول.",
@@ -439,7 +439,7 @@ export const translations = {
       items: [
         {
           title: "1. جربتي تطبيقات أخرى.",
-          desc: "عارف كيفاش خدامة. سويب بلا حد و ghosting.",
+          desc: "عارف كيفاش خدامة. سويب بلا حد واللي كيختفي.",
         },
         {
           title: "2. تطابقتي ← ماتت المحادثة.",
@@ -518,7 +518,7 @@ export const translations = {
       support: "الدعم",
       crafted: "",
       companyLinks: ["الصفحة الرئيسية", "علينا", "كيفاش خدام", "المميزات"],
-      supportLinks: ["FAQs", "سياسة الخصوصية", "تواصل معنا"],
+      supportLinks: ["الأسئلة المتكررة", "سياسة الخصوصية", "تواصل معنا"],
     },
   },
 } as const;
