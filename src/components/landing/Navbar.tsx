@@ -25,6 +25,7 @@ export function Navbar() {
     { code: "en", label: "EN" },
     { code: "fr", label: "FR" },
     { code: "es", label: "ES" },
+    { code: "da", label: "DA" },
   ];
 
   useEffect(() => {
