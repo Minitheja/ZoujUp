@@ -1,9 +1,9 @@
 import { createContext, useContext, useState, useCallback, type ReactNode } from "react";
-import { translations, type Lang, type Translations } from "./i18n";
+import { translations, type Lang } from "./i18n";
 
 interface LanguageContextValue {
   lang: Lang;
-  t: Translations;
+  t: typeof translations[Lang];
   toggleLang: () => void;
   setLanguage: (lang: Lang) => void;
 }
@@ -14,7 +14,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>(() => {
     // Persist preference across reloads
     const saved = localStorage.getItem("zoujup-lang") as Lang;
-    return (saved === "fr" || saved === "es") ? saved : "en";
+    return (saved === "fr" || saved === "es" || saved === "da") ? saved : "en";
   });
 
   const setLanguage = useCallback((newLang: Lang) => {

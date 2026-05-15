@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/LanguageContext";
 
 export function Cta() {
-  const { lang, t } = useLang();
+  const { t } = useLang();
   const c = t.cta;
 
   return (
@@ -105,31 +105,7 @@ export function Cta() {
             {c.button}
           </button>
           <p className="text-[11px] sm:text-xs text-[#111111]/60 italic mt-2 leading-tight">
-            {lang === "en" ? (
-              <>
-                By joining, you agree to our{" "}
-                <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                  Privacy Policy
-                </Link>
-                . We will never share your email.
-              </>
-            ) : lang === "fr" ? (
-              <>
-                En vous inscrivant, vous acceptez notre{" "}
-                <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                  Politique de Confidentialité
-                </Link>
-                . Nous ne partagerons jamais votre e-mail.
-              </>
-            ) : (
-              <>
-                Al unirte, aceptas nuestra{" "}
-                <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                  Política de Privacidad
-                </Link>
-                . Nunca compartiremos tu correo electrónico.
-              </>
-            )}
+            HELLO_TEST_123
           </p>
         </form>
         <p className="mt-5 sm:mt-6 text-[#111111] opacity-80 font-medium italic text-sm sm:text-base">

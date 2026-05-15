@@ -35,7 +35,7 @@ function Index() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   useEffect(() => {
-    ["/EnglishApp.png", "/FrenchApp.png", "/SpanishApp.png"].forEach((src) => {
+    ["/assetsrc/EnglishApp.svg", "/assetsrc/FrenchApp.svg", "/assetsrc/SpanishApp.svg", "/assetsrc/DarijaApp.svg"].forEach((src) => {
       new Image().src = src;
     });
   }, []);
@@ -81,7 +81,7 @@ function Index() {
               {status !== "success" && (
                 <div className="flex items-center justify-center h-full">
                   <img
-                    src={lang === "fr" ? "/assetsrc/FrenchApp.svg" : lang === "es" ? "/assetsrc/SpanishApp.svg" : "/assetsrc/EnglishApp.svg"}
+                    src={lang === "fr" ? "/assetsrc/FrenchApp.svg" : lang === "es" ? "/assetsrc/SpanishApp.svg" : lang === "da" ? "/assetsrc/DarijaApp.svg" : "/assetsrc/EnglishApp.svg"}
                     alt="ZoujUp mobile app"
                     className="h-[38vh] sm:h-[52vh] lg:h-[85vh] w-auto drop-shadow-2xl"
                   />
@@ -96,20 +96,22 @@ function Index() {
                   <CheckCircle2 className="h-14 w-14 text-[#FFC107]" />
                 </div>
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#111111] mb-6">
-                  {lang === "en" ? "You're on the list!" : lang === "fr" ? "Vous êtes sur la liste !" : "¡Estás en la lista!"}
+                  {lang === "en" ? "You're on the list!" : lang === "fr" ? "Vous êtes sur la liste !" : lang === "da" ? "!نت فالقائمة" : "¡Estás en la lista!"}
                 </h2>
                 <p className="text-[#111111] text-xl opacity-90 max-w-md mx-auto leading-relaxed">
                   {lang === "en"
                     ? "Thank you for joining ZoujUp. We'll reach out as soon as we're ready for you."
                     : lang === "fr"
                     ? "Merci d'avoir rejoint ZoujUp. Nous vous contacterons dès que nous serons prêts."
+                    : lang === "da"
+                    ? "شكراً على انضمامك لـ ZoujUp. غادي نتواصلو معك ملي نكونو مستعدين."
                     : "Gracias por unirte a ZoujUp. Nos pondremos en contacto contigo tan pronto como estemos listos."}
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
                   className="mt-8 text-[#111111] font-bold underline hover:opacity-70 transition-opacity"
                 >
-                  {lang === "en" ? "Back to form" : lang === "fr" ? "Retour au formulaire" : "Volver al formulario"}
+                  {lang === "en" ? "Back to form" : lang === "fr" ? "Retour au formulaire" : lang === "da" ? "ارجع للفورم" : "Volver al formulario"}
                 </button>
               </div>
             ) : (
@@ -185,31 +187,11 @@ function Index() {
               </button>
               
               <p className="text-[11px] sm:text-xs text-[#111111]/60 italic mt-4 leading-tight text-center">
-                {lang === "en" ? (
-                  <>
-                    By joining, you agree to our{" "}
-                    <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                      Privacy Policy
-                    </Link>
-                    . We will never share your email.
-                  </>
-                ) : lang === "fr" ? (
-                  <>
-                    En vous inscrivant, vous acceptez notre{" "}
-                    <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                      Politique de Confidentialité
-                    </Link>
-                    . Nous ne partagerons jamais votre e-mail.
-                  </>
-                ) : (
-                  <>
-                    Al unirte, aceptas nuestra{" "}
-                    <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
-                      Política de Privacidad
-                    </Link>
-                    . Nunca compartiremos tu correo electrónico.
-                  </>
-                )}
+                {c.legalStart}{" "}
+                <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">
+                  {c.legalLinkText}
+                </Link>
+                {c.legalEnd}
               </p>
             </form>
             <p className="mt-5 sm:mt-6 text-[#111111] opacity-80 font-medium italic text-sm sm:text-base text-center lg:text-left">

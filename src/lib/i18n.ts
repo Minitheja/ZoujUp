@@ -1,4 +1,4 @@
-export type Lang = "en" | "fr" | "es";
+export type Lang = "en" | "fr" | "es" | "da";
 
 export const translations = {
   en: {
@@ -96,7 +96,9 @@ export const translations = {
       button: "Join the waitlist",
       note: "Limited early access (100 users). No credit card. Cancel anytime.",
       alert: "Thanks for joining! We'll notify you when a spot opens.",
-      legal: "By joining, you agree to our Privacy Policy. We will never share your email.",
+      legalStart: "By joining, you agree to our",
+      legalLinkText: "Privacy Policy",
+      legalEnd: ". We will never share your email.",
       nativeLang: "My native language",
       practiceLang: "Language I want to practice",
       langOptions: [
@@ -228,7 +230,9 @@ export const translations = {
       button: "Rejoindre la liste",
       note: "Accès anticipé limité (100 utilisateurs). Sans carte bancaire. Annulation à tout moment.",
       alert: "Merci de vous être inscrit ! Nous vous préviendrons dès qu'une place se libère.",
-      legal: "En vous inscrivant, vous acceptez notre Politique de Confidentialité. Nous ne partagerons jamais votre e-mail.",
+      legalStart: "En vous inscrivant, vous acceptez notre",
+      legalLinkText: "Politique de Confidentialité",
+      legalEnd: ". Nous ne partagerons jamais votre e-mail.",
       nativeLang: "Ma langue maternelle",
       practiceLang: "Langue que je souhaite pratiquer",
       langOptions: [
@@ -356,7 +360,9 @@ export const translations = {
       button: "Únete a la lista",
       note: "Acceso temprano limitado (100 usuarios). Sin tarjeta de crédito. Cancela en cualquier momento.",
       alert: "¡Gracias por unirte! Te avisaremos cuando haya un lugar disponible.",
-      legal: "Al unirte, aceptas nuestra Política de Privacidad. Nunca compartiremos tu correo electrónico.",
+      legalStart: "Al unirte, aceptas nuestra",
+      legalLinkText: "Política de Privacidad",
+      legalEnd: ". Nunca compartiremos tu correo electrónico.",
       nativeLang: "Mi idioma nativo",
       practiceLang: "Idioma que quiero practicar",
       langOptions: [
@@ -385,6 +391,134 @@ export const translations = {
       crafted: "",
       companyLinks: ["Inicio", "Acerca de", "Cómo funciona", "Características"],
       supportLinks: ["FAQs", "Política de Privacidad", "Contacto"],
+    },
+  },
+  da: {
+    // Navbar
+    nav: {
+      home: "الصفحة الرئيسية",
+      about: "علينا",
+      howItWorks: "كيفاش خدام",
+      features: "المميزات",
+      faq: "FAQs",
+      contact: "تواصل معنا",
+      joinWaitlist: "انضم للقائمة",
+    },
+
+    // Hero
+    hero: {
+      headline1: "خلاص من المحادثات العشوائية.",
+      headline2: "ابدأ تمرين اللغة بطريقة منظمة.",
+      subheadline: "محادثات موجهة مع ناطقين أصليين.",
+      body: "ما كاينش ghosting. ما كاينش هضرة فارغة. ما كاينش جو ديال التعارف. \nغير تمرين حقيقي.",
+      cta: "انضم للقائمة",
+      earlyAccessTitle:
+        "كانين نقبلو أول 100 مستخدم باش نضمنو مطابقات ذات جودة عالية من اليوم الأول.",
+      earlyAccessSub: "المستخدمين الأوائل يحصلو على وصول أولوي + مطابقات زائدة عند الإطلاق.",
+    },
+
+    // Process
+    process: {
+      title: "كيفاش",
+      titleAccent: "خدام",
+      subtitle: "عملية بسيطة ومركزة باش تبدأ تهدر في ثواني.",
+      steps: [
+        { title: "1. تطابق فوراً", desc: "ما كاينش سويب. ما كاينش بروفايلات بلا حد." },
+        {
+          title: "2. مارس جلسة موجهة مع أسئلة منظمة",
+          desc: "وقت الهدرة متوازن — كل واحد يهدر باللغة اللي بغا يتعلمها.",
+        },
+        { title: "3. كمل غير إلا كان فيه انسجام", desc: "بلا ضغط. بلا وقت ضايع." },
+      ],
+    },
+
+    // Difference
+    difference: {
+      title: "علاش ZoujUp",
+      titleAccent: "مختلف",
+      items: [
+        {
+          title: "1. جربتي تطبيقات أخرى.",
+          desc: "عارف كيفاش خدامة. سويب بلا حد و ghosting.",
+        },
+        {
+          title: "2. تطابقتي ← ماتت المحادثة.",
+          desc: "الكلام ما كيوصلش لشي. كيبان بحال تطبيق ديال التعارف.",
+        },
+        {
+          title: "3. ZoujUp مختلف.",
+          desc: "كل جلسة موجهة ومنظمة ومتوازنة. قصيرة بما يكفي تناسب نهارك. فعالة بما يكفي تفرق.",
+        },
+      ],
+      footerText: "ما كاينش سويب. ما كاينش محادثات عشوائية. ما كاينش جو تعارف. غير تمرين حقيقي.",
+    },
+
+    // FAQ
+    faq: {
+      title: "الأسئلة المتكررة",
+      subtitle: "كل شي خاصك تعرفو على ZoujUp.",
+      items: [
+        {
+          q: "أنهي لغات يمكنني نتمرن عليها؟",
+          a: "عند الإطلاق: الدارجة المغربية 🇲🇦، الفرنسية 🇫🇷، الإنجليزية 🇬🇧، والإسبانية 🇪🇸. مزيد من اللغات قريباً.\nما لقيتيش لغتك؟ طلبها من هنا — كنبنيو على حسب طلبات المجتمع.",
+        },
+        {
+          q: "واش ZoujUp مجاني؟",
+          a: "ZoujUp كيعرض خطة مجانية باش تبدأ، مع خطط premium للي بغاو يتمرنو أكثر. التفاصيل الكاملة ديال الأسعار غادي تكون متاحة عند الإطلاق.",
+        },
+        {
+          q: "واش ZoujUp مختلف على التطبيقات الأخرى ديال اللغات؟",
+          a: "آيه — بكل معنى الكلمة. ZoujUp ماشي تطبيق chat. كل جلسة موجهة ومحددة وقت ومتوازنة. ما كاينش تصفح حر، ما كاينش رسائل عشوائية، ما كاينش جو تعارف. غير تمرين منظم حقيقي.",
+        },
+        {
+          q: "واش هو آمن ومهني؟",
+          a: "آيه. ما كاينش بروفايلات مفتوحة للتصفح والشات ما يتفتحش غير بعد تحقق متبادل من الجلسة. تسامح صفري مع السلوك غير اللائق — الحسابات تتحذف بشكل دائم.",
+        },
+        {
+          q: "واش يمكنني نختار نتمرن غير مع النساء أو غير مع الرجال؟",
+          a: "آيه. خلال التسجيل، يمكنك تحديد تفضيلك: نساء فقط، رجال فقط، أو بدون تفضيل. ZoujUp كيحترم حدودك الشخصية والثقافية. شريك التمرين ديالك غادي يوافق دائماً تفضيلك.",
+        },
+      ],
+    },
+
+    // CTA
+    cta: {
+      title: "انضم لقائمة الانتظار",
+      placeholder: "دخل عنوان الإيميل ديالك",
+      button: "انضم للقائمة",
+      note: "وصول مبكر محدود (100 مستخدم). بلا كارطة بنكية. إلغاء في أي وقت.",
+      alert: "شكراً على الانضمام! غادي نعلموك ملي يتوفر مكان.",
+      legalStart: "بالانضمام، كتوافق على",
+      legalLinkText: "سياسة الخصوصية",
+      legalEnd: " ديالنا. ما غادي نشاركو الإيميل ديالك أبداً.",
+      nativeLang: "اللغة الأم ديالي",
+      practiceLang: "اللغة اللي بغيت نتعلمها",
+      langOptions: [
+        "الدارجة المغربية",
+        "الفرنسية",
+        "الإنجليزية",
+        "الإسبانية",
+        "أخرى (قريباً)",
+      ],
+    },
+
+    // Contact
+    contact: {
+      title: "تواصل",
+      titleAccent: "معنا",
+      subtitle: "عندك أسئلة أو ملاحظات؟ يسرنا نسمعك. الفريق ديالنا هنا باش يعاونك في رحلة تعلم اللغات.",
+      cardTitle: "راسلنا",
+      cardDesc: "للاستفسارات العامة أو الدعم أو فرص الشراكة، تواصل معنا على:",
+    },
+
+    // Footer
+    footer: {
+      tagline: "تمرن على لغتك مع شخص محتاج للغتك. ماشي ذكاء اصطناعي. ماشي شات عشوائي. إنسان حقيقي، محادثة حقيقية.",
+      company: "الشركة",
+      support: "الدعم",
+      crafted: "",
+      companyLinks: ["الصفحة الرئيسية", "علينا", "كيفاش خدام", "المميزات"],
+      supportLinks: ["FAQs", "سياسة الخصوصية", "تواصل معنا"],
     },
   },
 } as const;

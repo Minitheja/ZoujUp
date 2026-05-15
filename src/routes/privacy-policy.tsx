@@ -103,6 +103,90 @@ function PrivacyPolicy() {
     );
   }
 
+  if (lang === "da") {
+    return (
+      <div className="relative min-h-screen bg-white overflow-x-hidden" dir="rtl">
+        <Navbar />
+        <main className="pt-24 sm:pt-32 pb-16 sm:pb-24">
+          <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A1A1A] mb-2 font-display">سياسة الخصوصية</h1>
+            <p className="text-sm text-[#6B7280] mb-10 italic">آخر تحديث: ماي 2026</p>
+
+            <div className="space-y-10 text-[#1A1A1A]">
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">1. شكون حنا</h2>
+                <p className="leading-relaxed">
+                  ZoujUp هي تطبيق موبايل لتمرين اللغات، حاليًا في طور التطوير.
+                  <br />
+                  للتواصل: <a href="mailto:contact@zoujup.com" className="text-[#FFC107] hover:underline">contact@zoujup.com</a>
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">2. أنهي معطيات كنجمعو</h2>
+                <div className="leading-relaxed space-y-1">
+                  <p>ملي كتنضم للقائمة ديالنا، كنجمعو:</p>
+                  <ul className="list-disc pr-6 space-y-1">
+                    <li>عنوان الإيميل ديالك</li>
+                    <li>اللغة الأم ديالك</li>
+                    <li>اللغة اللي بغيت تتمرن عليها</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">3. علاش كنجمعوها</h2>
+                <div className="leading-relaxed space-y-1">
+                  <p>كنستعملو هاد المعلومات باش:</p>
+                  <ul className="list-disc pr-6 space-y-1">
+                    <li>نعلموك ملي يتلاوح ZoujUp ونبعثوليك معلومات على الوصول المبكر</li>
+                    <li>نفهمو احتياجات اللغات ديال مجتمعنا باش نضمنو مطابقات ذات جودة عالية من اليوم الأول</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">4. كيفاش كنحفظوها</h2>
+                <p className="leading-relaxed">
+                  الإيميل ديالك كيتحفظ بأمان عبر منصة الإيميل ديالنا (Mailchimp أو ما يشابهها). ما كنحفظوش أي معلومة شخصية أخرى.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">5. قداش غادي نحتفظو بيها</h2>
+                <p className="leading-relaxed">
+                  كنحتفظو بالإيميل ديالك حتى يتلاوح التطبيق. يمكنك تطلب حذفو في أي وقت.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">6. حقوقك</h2>
+                <p className="leading-relaxed">
+                  عندك الحق توصل، تصحح، أو تحذف المعطيات ديالك في أي وقت. باش تدير هادشي، راسلنا على <a href="mailto:contact@zoujup.com" className="text-[#FFC107] hover:underline">contact@zoujup.com</a>
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">7. ما غادي نبيعوش المعطيات ديالك أبداً</h2>
+                <p className="leading-relaxed">
+                  ما غادي نشاركوش ولا نبيعوش الإيميل ديالك لأي طرف ثالث.
+                </p>
+              </section>
+
+              <section className="space-y-3">
+                <h2 className="text-xl font-bold uppercase tracking-wide text-[#FFC107]">8. الكوكيز</h2>
+                <p className="leading-relaxed">
+                  هاد الموقع ما كيستعملش أي كوكيز للتتبع في هاد المرحلة.
+                </p>
+              </section>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
   if (lang === "fr") {
     return (
       <div className="relative min-h-screen bg-white overflow-x-hidden">

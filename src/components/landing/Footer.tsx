@@ -92,7 +92,7 @@ export function Footer() {
                     hash = "difference";
                   } else if (label.includes("work") || label.includes("fonctionne") || label.includes("funciona")) {
                     hash = "how-it-works";
-                  } else if (label.includes("privacy") || label.includes("confidential") || label.includes("privacidad")) {
+                  } else if (label.includes("privacy") || label.includes("confidential") || label.includes("privacidad") || label.includes("سياسة")) {
                     to = "/privacy-policy";
                     isExternal = true;
                   } else {
