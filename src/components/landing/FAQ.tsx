@@ -6,6 +6,25 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const EMAIL = "contact@zoujup.com";
+
+function renderAnswer(text: string) {
+  const parts = text.split(EMAIL);
+  if (parts.length === 1) return text;
+  return (
+    <>
+      {parts[0]}
+      <a
+        href={`mailto:${EMAIL}`}
+        className="text-[#1A1A1A] font-semibold underline underline-offset-2 hover:text-[#FFC107] transition-colors duration-200"
+      >
+        {EMAIL}
+      </a>
+      {parts[1]}
+    </>
+  );
+}
+
 export function FAQ() {
   const { t } = useLang();
   const f = t.faq;
@@ -37,7 +56,7 @@ export function FAQ() {
                 {faq.q}
               </AccordionTrigger>
               <AccordionContent className="text-[#4B5563] px-6 sm:px-8 py-6 sm:py-8 text-base sm:text-lg leading-relaxed border-t border-[#F3F4F6] bg-gray-50/30 whitespace-pre-line">
-                {faq.a}
+                {renderAnswer(faq.a)}
               </AccordionContent>
             </AccordionItem>
           ))}
