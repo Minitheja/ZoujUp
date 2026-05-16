@@ -68,7 +68,7 @@ export const translations = {
       items: [
         {
           q: "Which languages can I practice?",
-          a: "At launch: Moroccan Arabic (Darija) 🇲🇦, French 🇫🇷, English 🇬🇧, and Spanish 🇪🇸. More languages coming soon.\nCan’t find your language? Request it below — we build based on community demand. Request yours below.",
+          a: "At launch: Moroccan Arabic (Darija) 🇲🇦, French 🇫🇷, English 🇬🇧, and Spanish 🇪🇸. More languages coming soon.\nCan’t find your language? Contact us at contact@zoujup.com — we build based on community demand.",
         },
         {
           q: "Is ZoujUp free to use?",
@@ -146,8 +146,8 @@ export const translations = {
     hero: {
       headline1: "Fini les discussions aléatoires.",
       headline2: "Place à la vraie pratique linguistique.",
-      subheadline: "Conversations guidées avec des locuteurs natifs.",
-      body: "Pas de ghosting. Pas de bavardages. pas d'ambiance appli de rencontres. \nJuste de la vraie pratique orale.",
+      subheadline: "Conversations guidées avec de vraies personnes.",
+      body: "Pas de ghosting. Pas de bavardages. Pas d'ambiance appli de rencontres. \nJuste de la vraie pratique orale.",
       cta: "Rejoindre la liste",
       earlyAccessTitle:
         "Nous accueillons nos 100 premiers utilisateurs pour garantir des mises en relation de qualité.",
@@ -166,7 +166,7 @@ export const translations = {
           desc: "Pas de swipe. Pas de profils interminables.",
         },
         {
-          title: "2. Pratiquez une séance guidée avec des invites structurées.",
+          title: "2. Une séance guidée. On vous donne le sujet. Vous parlez.",
           desc: "Temps de parole équilibré — chaque partenaire parle la langue qu'il souhaite apprendre.",
         },
         { title: "3. Continuez uniquement si le courant passe", desc: "Sans pression. Sans temps perdu." },
@@ -180,7 +180,7 @@ export const translations = {
       items: [
         {
           title: "1. Vous avez déjà essayé d'autres applis.",
-          desc: "Vous savez comment ça se passe. Swipe infini and ghosting.",
+          desc: "Vous savez comment ça se passe. Swipe infini et ghosting.",
         },
         {
           title: "2. Vous matchez → ça meurt.",
@@ -192,7 +192,7 @@ export const translations = {
         },
       ],
       footerText:
-        "Pas de swipe. Pas de discussions aléatoires. Pas de feeling dating. Juste de la vraie pratique.",
+        "Pas de swipe. Pas de discussions aléatoires. Pas d’ambiance appli de rencontres. Juste de la vraie pratique.",
     },
 
     // FAQ
@@ -332,11 +332,11 @@ export const translations = {
       items: [
         {
           q: "¿Qué idiomas puedo practicar?",
-          a: "En el lanzamiento: árabe marroquí (Darija) 🇲🇦, francés 🇫🇷, inglés 🇬🇧 y español 🇪🇸. Próximamente habrá más idiomas.\n¿No encuentras tu idioma? Solicítalo a continuación: construimos según la demanda de la comunidad. Solicita el tuyo abajo.",
+          a: "En el lanzamiento: árabe marroquí (Darija) 🇲🇦, francés 🇫🇷, inglés 🇬🇧 y español 🇪🇸. ¿No encuentras tu idioma? Escríbenos a contact@zoujup.com — construimos según la demanda de la comunidad.",
         },
         {
           q: "¿Es ZoujUp gratuito?",
-          a: "Sí. ZoujUp ofrece un plan gratuito para que puedas empezar, con planes premium disponibles para aquellos que quieran practicar más. Los detalles completos de los precios estarán disponibles en el lanzamiento.",
+          a: "ZoujUp ofrece un plan gratuito para que puedas empezar, con planes premium disponibles para aquellos que quieran practicar más. Los detalles completos de los precios estarán disponibles en el lanzamiento.",
         },
         {
           q: "¿Es ZoujUp diferente de otras aplicaciones de idiomas?",
@@ -376,8 +376,8 @@ export const translations = {
 
     // Contact
     contact: {
-      title: "Contácta",
-      titleAccent: "nos",
+      title: "Contáctanos",
+      titleAccent: "",
       subtitle: "¿Tienes preguntas o comentarios? Nos encantaría escucharte. Nuestro equipo está aquí para apoyar tu aprendizaje de idiomas.",
       cardTitle: "Escríbenos",
       cardDesc: "Para consultas generales, soporte u oportunidades de colaboración, contáctanos en:",
