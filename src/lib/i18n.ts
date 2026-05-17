@@ -420,7 +420,7 @@ export const translations = {
     // Process
     process: {
       title: "كيفاش",
-      titleAccent: "خدام",
+      titleAccent: "خدام هاد التطبيق",
       subtitle: "عملية بسيطة ومركزة باش تبدأ تهدر في ثواني.",
       steps: [
         { title: "1. تواصل فوري", desc: "لا سوايب. لا بروفايلات طوال بلا فايدة" },
