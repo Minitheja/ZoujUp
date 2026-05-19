@@ -1,7 +1,6 @@
-import { Sparkles, MicVocal, Target } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
 
-const icons = [Sparkles, MicVocal, Target];
+const icons = ["⚡", "🎤", "🎯"];
 
 export function Process() {
   const { t } = useLang();
@@ -24,19 +23,13 @@ export function Process() {
           {/* Steps */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {p.steps.map(({ title, desc }, i) => {
-              const Icon = icons[i];
-              // Split number and text (e.g. "1. " and "Text")
-              const parts = title.match(/^(\d+\.)\s*(.*)$/);
-              const num = parts ? parts[1] : "";
-              const content = parts ? parts[2] : title;
-
               return (
                 <div
                   key={title}
                   className="flex gap-5 sm:gap-6 items-start bg-white p-6 sm:p-8 rounded-[24px] border border-[#E5E7EB] shadow-sm hover:border-[#FFC107] transition-all duration-300"
                 >
-                  <div className="inline-flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-[16px] bg-[#F8F9FA] border border-[#E5E7EB] shadow-sm transition-colors duration-200">
-                    <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-[#FFC107]" strokeWidth={2} />
+                  <div className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-[12px] bg-white border border-[#E5E7EB] shadow-sm text-[28px]">
+                    {icons[i]}
                   </div>
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#1A1A1A]">

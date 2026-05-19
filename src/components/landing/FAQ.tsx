@@ -8,19 +8,35 @@ import {
 
 const EMAIL = "contact@zoujup.com";
 
-function renderAnswer(text: string) {
-  const parts = text.split(EMAIL);
-  if (parts.length === 1) return text;
+function renderSegment(segment: string, key: number) {
+  const emailParts = segment.split(EMAIL);
+  if (emailParts.length === 1) return <span key={key}>{segment}</span>;
   return (
-    <>
-      {parts[0]}
+    <span key={key}>
+      {emailParts[0]}
       <a
         href={`mailto:${EMAIL}`}
         className="text-[#1A1A1A] font-semibold underline underline-offset-2 hover:text-[#FFC107] transition-colors duration-200"
       >
         {EMAIL}
       </a>
-      {parts[1]}
+      {emailParts[1]}
+    </span>
+  );
+}
+
+function renderAnswer(text: string) {
+  const boldParts = text.split(/\*\*(.*?)\*\*/g);
+  if (boldParts.length === 1) return renderSegment(text, 0);
+  return (
+    <>
+      {boldParts.map((part, i) =>
+        i % 2 === 1 ? (
+          <strong key={i} className="font-bold text-[#1A1A1A]">{part}</strong>
+        ) : (
+          renderSegment(part, i)
+        )
+      )}
     </>
   );
 }
