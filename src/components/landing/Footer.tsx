@@ -30,6 +30,15 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm opacity-70 leading-relaxed max-w-[280px]">{f.tagline}</p>
+            <p className="mt-4 text-sm whitespace-nowrap">
+              <span className="font-bold text-white">{f.questions}</span>{" "}
+              <a
+                href="mailto:contact@zoujup.com"
+                className="text-[#FFC107] font-semibold hover:opacity-80 transition-opacity"
+              >
+                contact@zoujup.com
+              </a>
+            </p>
             <div className="flex gap-3 mt-5 sm:mt-6">
               <a
                 href="https://www.instagram.com/zoujup_officiel/"
@@ -87,7 +96,7 @@ export function Footer() {
                   } else if (label.includes("contact") || label.includes("contacto")) {
                     hash = "contact";
                   } else if (label.includes("about") || label.includes("propos") || label.includes("acerca")) {
-                    hash = "home";
+                    hash = "about";
                   } else if (label.includes("feature") || label.includes("fonctionnal") || label.includes("caracter")) {
                     hash = "difference";
                   } else if (label.includes("work") || label.includes("fonctionne") || label.includes("funciona")) {

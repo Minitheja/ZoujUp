@@ -32,11 +32,10 @@ export const translations = {
       titleAccent: "fixes",
       subtitle: "Real problems. Real solutions. No bullshit.",
       items: [
-        { icon: "😤", q: "\"I studied for years and still freeze when I try to speak.\"", a: "**ZoujUp is not study — it's speaking.** No flashcards. No grammar tests. Just real conversations with real people. Studies show 15 minutes of daily speaking outperforms hours of passive learning." },
-        { icon: "💔", q: "\"Other language apps feel like dating apps. I came to learn, not to be hit on.\"", a: "**ZoujUp is anti-dating by design.** No browsing profiles. No swiping. No public messaging. Just structured sessions with a partner matched for your goal, anonymized to first name only." },
-        { icon: "⏰", q: "\"Tutors are expensive. Classes don't fit my schedule. I can't sustain it.\"", a: "**15 minutes. That's all it takes.** ZoujUp fits in your morning coffee, your commute, your lunch break. Your partner gets just as much value — they're learning your language." },
-        { icon: "🌍", q: "\"I'm in the diaspora. I'm losing the language of my parents — and my kids will lose more.\"", a: "**Bring it back home.** Every session you do is one more conversation you can have with your family. Some ZoujUp users practice in the morning, then use those phrases the same evening — at the dinner table, with their kids." },
-        { icon: "💼", q: "\"I'm in Morocco. I need English or French for my career — but I have no one real to practice with locally.\"", a: "**The world is on the other side of the screen.** Practice with a French or English native who actually wants to learn Darija from you. Authentic accents, real expressions, current slang — not textbook English from a tutor who's never lived in London." },
+        { icon: "😤", q: "\"I studied for years and still freeze when I try to speak — and I have no one real to practice with.\"", a: "**ZoujUp is not study — it's speaking.** No flashcards. No grammar tests. Just real conversations with real people, anywhere in the world — and your partner needs your language as much as you need theirs. A few minutes of real conversation a day beats hours of passive study." },
+        { icon: "💔", q: "\"Other language apps feel like dating apps. I came to learn, not to be hit on.\"", a: "**ZoujUp is anti-dating by design.** No browsing profiles. No swiping. No public messaging. Just structured sessions with a partner matched for your goal" },
+        { icon: "⏰", q: "\"Tutors are expensive. Classes don't fit my schedule. I can't sustain it.\"", a: "**A few minutes a day. That's all it takes.** ZoujUp fits in your morning coffee, your commute, your lunch break. Your partner gets just as much value — they're learning your language." },
+        { icon: "🌍", q: "\"I'm in the diaspora. I'm losing the language of my parents — and my kids will lose more.\"", a: "**Bring it back home — by giving someone what they need too.** ZoujUp pairs you with a Moroccan who wants to learn your French, English or Spanish. You teach each other. You leave with your Darija stronger. They leave with the global language they've been chasing. Both win. Imagine practicing with ZoujUp in the morning and using those same phrases again that very evening — at the dinner table, with your kids?" },        
       ],
     },
 
@@ -134,8 +133,8 @@ export const translations = {
     // Founder
     founder: {
       title: "Why I built ZoujUp",
-      p1: "I'm Jihane — MRE, born between two worlds. Like many of you, I grew up between two languages and lost some of my Darija along the way.",
-      p2: "I tried every language exchange app I could find. None worked: endless ghosting, dating-app vibes, conversations going nowhere. So I built the one I wished existed — one that takes Darija seriously, respects your time, and pairs you with someone who actually needs your language as much as you need theirs.",
+      p1: "I’m Jihane — MRE, born between two worlds. I grew up understanding Darija but struggling to speak it back.",
+      p2: " I built ZoujUp because I couldn’t find the app I needed. And I know I’m not alone.",
       signature: "— Jihane, Founder of ZoujUp",
       linkedin: "LinkedIn",
       instagram: "Instagram",
@@ -146,6 +145,16 @@ export const translations = {
       titleSuffix: "/ 100 people already signed up",
       subtitle: "When we hit 100, we close. First 100 get 1 month of unlimited access FREE.",
       percentSuffix: "% claimed — limited spots, no second chance",
+    },
+
+    // CTA Mid
+    ctaMid1: {
+      headline: "Ready to be part of the story?",
+      button: "Count me in →",
+    },
+    ctaMid3: {
+      headline: "Still here? You're ready.",
+      button: "Reserve my spot →",
     },
 
     // Contact
@@ -160,6 +169,7 @@ export const translations = {
     // Footer
     footer: {
       tagline: "Practice your language with someone who needs yours. Not an AI. Not random chat. A real human, a real conversation.",
+      questions: "Questions? Reach out:",
       company: "Company",
       support: "Support",
       crafted: "",
@@ -200,11 +210,10 @@ export const translations = {
       titleAccent: "règle vraiment",
       subtitle: "De vrais problèmes. De vraies solutions. Pas de bullshit.",
       items: [
-        { icon: "😤", q: "\"J'ai étudié pendant des années et je freeze toujours quand je parle.\"", a: "**ZoujUp n'est pas de l'étude — c'est de la conversation.** Pas de cartes mémo. Pas de tests grammaire. Juste de vraies conversations avec de vraies personnes. Les études montrent que 15 minutes par jour de pratique orale surpassent des heures d'apprentissage passif." },
-        { icon: "💔", q: "\"Les autres apps de langues ressemblent à des apps de rencontre. Je viens apprendre, pas être draguée.\"", a: "**ZoujUp est anti-dating par conception.** Pas de profils à scroller. Pas de swipe. Pas de messagerie publique. Juste des sessions structurées avec un partenaire choisi pour ton objectif, anonymisé au prénom uniquement." },
-        { icon: "⏰", q: "\"Les profs sont chers. Les cours ne tiennent pas dans mon planning. Je n'arrive pas à tenir.\"", a: "**15 minutes. C'est tout ce qu'il faut.** ZoujUp tient dans ton café du matin, ton trajet, ta pause déjeuner. Ton partenaire reçoit autant de valeur — il apprend ta langue." },
-        { icon: "🌍", q: "\"Je suis en diaspora. Je perds la langue de mes parents — et mes enfants en perdront encore plus.\"", a: "**Ramène-la à la maison.** Chaque session que tu fais, c'est une conversation de plus avec ta famille. Certains utilisateurs ZoujUp pratiquent le matin, puis utilisent les phrases le soir même — à table, avec leurs enfants." },
-        { icon: "💼", q: "\"Je suis au Maroc. J'ai besoin de l'anglais ou du français pour ma carrière — mais je n'ai personne avec qui pratiquer ici.\"", a: "**Le monde est de l'autre côté de l'écran.** Pratique avec un natif français ou anglais qui veut vraiment apprendre le Darija de toi. Vrais accents, expressions actuelles, argot réel — pas de l'anglais de manuel d'un prof qui n'a jamais vécu à Londres." },
+        { icon: "😤", q: "\"J’ai étudié pendant des années et je bloque encore dès que j’essaie de parler — et je n’ai personne avec qui pratiquer.\"", a: "**ZoujUp, ce n’est pas de la théorie — c’est de la parole.** Pas de listes de mots à mémoriser. Pas de tests de grammaire. Juste de vraies conversations avec de vraies personnes, partout dans le monde — et l’échange est mutuel — il a autant besoin de toi que toi de lui. Quelques minutes de vraie conversation par jour valent mieux que des heures d’étude passive." },
+        { icon: "💔", q: "\"Les autres applis de langues ressemblent à des applis de rencontre. Je suis venu ici pour apprendre, pas pour me faire draguer. \"", a: "**ZoujUp est conçu contre ça dès le départ.** Pas de profils à parcourir. Pas de swipe. Pas de messagerie publique. Juste des sessions structurées avec un partenaire de langue sélectionné selon ton objectif." },
+        { icon: "⏰", q: "\"Les profs coûtent cher. Les cours ne correspondent pas à mon emploi du temps. Je n’arrive pas à tenir sur la durée.\"", a: "**Quelques minutes par jour. C’est tout ce qu’il faut.** ZoujUp s’intègre dans ton café du matin, ton trajet ou ta pause déjeuner. Et ton partenaire de langue y gagne autant que toi — il apprend ta langue pendant que tu apprends la sienne." },
+        { icon: "🌍", q: "\"Je vis dans la diaspora. Je suis en train de perdre la langue de mes parents — et mes enfants la perdront encore plus vite. \"", a: "**Ne la laisse pas mourir.** Chaque session est une conversation de plus que tu peux avoir avec ta famille. Imagine pratiquer le matin avec ZoujUp et réutiliser ces phrases le soir même — à table, avec tes enfants." },
       ],
     },
 
@@ -302,8 +311,8 @@ export const translations = {
     // Founder
     founder: {
       title: "Pourquoi j'ai créé ZoujUp",
-      p1: "Je suis Jihane — MRE, née entre deux mondes. Comme beaucoup d'entre vous, j'ai grandi entre deux langues et j'ai perdu un peu de mon Darija en chemin.",
-      p2: "J'ai testé toutes les apps d'échange linguistique. Aucune ne marchait : ghosting permanent, vibe rencontre, conversations qui ne mènent nulle part. Alors j'ai créé celle qui me manquait — une app qui prend le Darija au sérieux, qui respecte ton temps, et qui te connecte avec quelqu'un qui a vraiment besoin de ta langue.",
+      p1: "Je suis Jihane — MRE, née entre deux mondes. J’ai grandi en comprenant le darija mais en galèrant à le parler.",
+      p2: "J’ai créé ZoujUp parce que je ne trouvais pas l’app dont j’avais besoin. Et je sais que je ne suis pas la seule.",
       signature: "— Jihane, Fondatrice de ZoujUp",
       linkedin: "LinkedIn",
       instagram: "Instagram",
@@ -314,6 +323,16 @@ export const translations = {
       titleSuffix: "/ 100 places fondateurs prises",
       subtitle: "Quand on atteint 100, on ferme. Les 100 premiers reçoivent 1 mois d'accès illimité OFFERT.",
       percentSuffix: "% prises — places limitées, pas de seconde chance",
+    },
+
+    // CTA Mid
+    ctaMid1: {
+      headline: "Prêt à faire partie de l'histoire ?",
+      button: "Compte sur moi →",
+    },
+    ctaMid3: {
+      headline: "Encore là ? Tu es prêt.",
+      button: "Réserve ma place →",
     },
 
     // Contact
@@ -328,6 +347,7 @@ export const translations = {
     // Footer
     footer: {
       tagline: "Pratique ta langue avec quelqu'un qui a besoin de la tienne. Pas une IA. Pas du chat aléatoire. Un vrai humain, une vraie conversation.",
+      questions: "Une question ? Écris-nous :",
       company: "Entreprise",
       support: "Support",
       crafted: "",
@@ -480,6 +500,16 @@ export const translations = {
       percentSuffix: "% ocupadas — plazas limitadas, sin segunda oportunidad",
     },
 
+    // CTA Mid
+    ctaMid1: {
+      headline: "¿Listo para ser parte de la historia?",
+      button: "Cuenta conmigo →",
+    },
+    ctaMid3: {
+      headline: "¿Sigues aquí? Estás listo.",
+      button: "Reservar mi lugar →",
+    },
+
     // Contact
     contact: {
       title: "Contáctanos",
@@ -492,6 +522,7 @@ export const translations = {
     // Footer
     footer: {
       tagline: "Practica tu idioma con alguien que necesita el tuyo. No con una IA. No con un chat aleatorio. Con una persona real y una conversación real.",
+      questions: "¿Preguntas? Escríbenos:",
       company: "Compañía",
       support: "Soporte",
       crafted: "",
@@ -526,15 +557,14 @@ export const translations = {
 
     // Pains
     pains: {
-      title: "اش كيحل ZoujUp",
-      titleAccent: "بالحقيقة",
-      subtitle: "مشاكل حقيقية. حلول حقيقية. بلا كذب.",
+      title: "شنو كايحل ZoujUp",
+      titleAccent: "فالحقيقة؟",
+      subtitle: "مشاكل حقيقية. حلول حقيقية. بلا هضرة خاوية.",
       items: [
-        { icon: "😤", q: "\"قريت سنين وكنزال كنبلوك ملي كنحاول نهدر.\"", a: "**ZoujUp ماشي دراسة — هي هدرة.** لا فلاشكارد. لا تيستات ديال قواعد. غير محادثات حقيقية مع ناس حقيقيين. الدراسات كتبين بلي 15 دقيقة ديال تمرين شفهي كل يوم كتفوق ساعات ديال تعلم سلبي." },
-        { icon: "💔", q: "\"التطبيقات الأخرى ديال اللغات كتحس بيها بحال تطبيقات التعارف. جيت نتعلم، مشي باش يتقرب مني أحد.\"", a: "**ZoujUp مضاد للتعارف بالتصميم.** لا بروفايلات تسكرول. لا سوايب. لا رسائل عامة. غير جلسات منظمة مع شريك مختار حسب هدفك، مجهول الهوية بالاسم الأول فقط." },
-        { icon: "⏰", q: "\"الأساتذة غاليين. الدروس ماكتوافقش مع برنامجي. ماقدرتش نداوم.\"", a: "**15 دقيقة. هاد هو اللي خاصك.** ZoujUp كتوافق مع قهوة الصباح، الترافيك، ستريحة الغداء. الشريك ديالك كيستافد نفس الشيء — هو كيتعلم لغتك." },
-        { icon: "🌍", q: "\"أنا فالديياسبورا. كنضيع لغة والديا — وأولادي غادي يضيعو أكثر.\"", a: "**ارجعها للدار.** كل جلسة كدير، هي محادثة زيادة مع عائلتك. بعض مستخدمي ZoujUp كيتمرنو الصباح، ومن بعد كيستعملو دك الجمل في المساء نفس اليوم — على الطاولة، مع أولادهم." },
-        { icon: "💼", q: "\"أنا فالمغرب. خصني الإنجليزية أو الفرنسية للكارير — ولكن ما عندي حتى حد حقيقي نتمرن معه هنا.\"", a: "**الدنيا فالجهة الأخرى ديال الشاشة.** تمرن مع ناتيف فرنسي أو إنجليزي اللي بغا يتعلم الدارجة منك. لهجات حقيقية، تعابير حقيقية، أرغو ديال الساعة — مشي إنجليزية ديال الكتاب ديال أستاذ عمرو ما عاش فلندن." },
+        { icon: "😤", q: "\"قريت سنين كاملة، ولكن ملي كنجي نهضر كنحبس… وما عنديش مع من نتدرب.\"", a: "**ZoujUp ماشي تطبيق ديال الحفظ والنظري.** هنا الهدف هو الهضرة الحقيقية. ما كايناش لوائح كلمات تحفظهم، ولا تمارين قواعد مملة. كاينين غير ناس حقيقيين من العالم كامل، كتهضر معاهم وكيهضرو معاك. والأحسن؟ التبادل متوازن — هو حتى هو محتاج يتعلم منك قد ما نتا محتاج تتعلم منو. شوية ديال الدقائق ديال الهضرة كل نهار، يقدرو يعلموك أكثر من ساعات ديال الدراسة الصامتة." },
+        { icon: "💔", q: "\"تطبيقات اللغات ولات بحال تطبيقات التعارف. جيت نتعلم، ماشي باش نتلاقى مع الناس.\"", a: "**ZoujUp مبني من الأول باش يتفادى هاد الشي.** ما كاين لا swipe، لا تقليب فالبروفايلات، لا شاتات عشوائية. كاينة غير جلسات منظمة مع شريك لغة، كيتختار على حساب الهدف ديالك فالتعلم." },
+        { icon: "⏰", q: "\"الدروس غالية، والمواعيد ما كاتناسبنيش، وصعيب نستمر.\"", a: "**غير دقائق قليلة فالنهار… وهاد الشي كافي.** تقدر تستعمل ZoujUp مع قهوتك الصباحية، فالطريق، ولا فالبوز ديال الخدمة أو القراية. وزيد عليها: شريك اللغة حتى هو كيربح معاك — كيتعلم لغتك بينما نتا كتعلم لغتو." },
+        { icon: "🌍", q: "\"أنا عايش فالغربة، وبديت كنضيع لغة الوالدين ديالي… وولادي غادي يضيعوها أكثر.\"", a: "**ما تخليش اللغة تموت.** كل جلسة هي فرصة جديدة باش تبقى اللغة حية فداركم. تصور تتدرب الصباح فـ ZoujUp، وبالليل تستعمل نفس العبارات مع عائلتك، مع والديك، ولا حتى مع ولادك على المائدة." },
       ],
     },
 
@@ -627,10 +657,10 @@ export const translations = {
 
     // Founder
     founder: {
-      title: "علاش بنيت ZoujUp",
-      p1: "أنا جيهان — MRE، تولدات بين جوج دنيايات. بحال بزاف منكم، كبرت بين جوج لغات وتلقينا شوية من الدارجة ديالي فالطريق.",
-      p2: "جربت كل تطبيق ديال تبادل اللغات. حتى واحد ما كانت تخدم: غوستينغ دايم، جو ديال تطبيقات التعارف، محادثات لي ما كتوصلش لحتى نتيجة. فبنيت اللي كنت كنبغي — واحد لي كياخد الدارجة بسيريوز، كيحترم وقتك، وكيمتشيك مع شي حد لي خاصه لغتك بقد ما خاصك لغته.",
-      signature: "— جيهان، مؤسسة ZoujUp",
+      title: "علاش صنعت ZoujUp",
+      p1: "أنا جهان — مغربية مقيمة بالخارج، تزاديت بين جوج ديال العوالم. كبرت وأنا كنفهم الدارجة، ولكن كنلقى صعوبة نهضر بها.",
+      p2: "صنعت ZoujUp حيت ما لقيتش التطبيق اللي كنت محتاجاه. وعارفة بلي ماشي غير أنا اللي كتحس بهاد الشي.",
+      signature: "— جهان، مؤسسة ZoujUp",
       linkedin: "LinkedIn",
       instagram: "Instagram",
     },
@@ -640,6 +670,16 @@ export const translations = {
       titleSuffix: "/ 100 مكان محجوز من المؤسسين",
       subtitle: "لما نوصلو 100، نغلقو. أول 100 كيأخدو شهر كامل ديال وصول مجاني.",
       percentSuffix: "% محجوزة — أماكن محدودة، لا فرصة ثانية",
+    },
+
+    // CTA Mid
+    ctaMid1: {
+      headline: "واجد تكون جزء من القصة؟",
+      button: "حسب عليا ←",
+    },
+    ctaMid3: {
+      headline: "مازال هنا؟ واجد.",
+      button: "احجز مكاني ←",
     },
 
     // Contact
@@ -654,6 +694,7 @@ export const translations = {
     // Footer
     footer: {
       tagline: "تمرن على لغتك مع شخص محتاج للغتك. ماشي ذكاء اصطناعي. ماشي شات عشوائي. إنسان حقيقي، محادثة حقيقية.",
+      questions: "عندك أسئلة؟ كتب لينا:",
       company: "الشركة",
       support: "الدعم",
       crafted: "",

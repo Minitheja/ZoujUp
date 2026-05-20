@@ -5,7 +5,7 @@ export function Founder() {
   const f = t.founder;
 
   return (
-    <section className="bg-white pt-16 pb-14 sm:pt-20 sm:pb-20">
+    <section id="about" className="bg-white pt-16 pb-14 sm:pt-20 sm:pb-20">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 md:gap-12 items-center">
 

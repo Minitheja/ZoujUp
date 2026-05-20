@@ -4,12 +4,13 @@ import { Hero } from "@/components/landing/Hero";
 import { Pains } from "@/components/landing/Pains";
 import { Process } from "@/components/landing/Process";
 import { Founder } from "@/components/landing/Founder";
+import { CtaMid } from "@/components/landing/CtaMid";
 import { Difference } from "@/components/landing/Difference";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { useLang } from "@/lib/LanguageContext";
 import { useState, useEffect, useRef } from "react";
-import { CheckCircle2, Mail } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
 // ... (rest of Route config remains the same)
@@ -214,6 +215,9 @@ function Index() {
                   </Link>
                   {c.legalEnd}
                 </p>
+                <p className="mt-2 text-[#111111] opacity-80 font-medium italic text-sm text-center">
+                  {c.note}
+                </p>
               </div>
             )}
               </div>
@@ -245,40 +249,10 @@ function Index() {
     <Pains />
     <Process />
     <Founder />
+    <CtaMid />
     {/* <Difference /> */}
     <FAQ />
-
-    {/* Get in Touch Section */}
-    <section id="contact" className="pt-10 pb-20 sm:pb-28 bg-white">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
-            {t.contact.title}{lang !== "es" && " "}<span className="text-[#FFC107]">{t.contact.titleAccent}</span>
-          </h2>
-          <p className="text-[#6B7280] text-lg sm:text-xl leading-relaxed">
-            {t.contact.subtitle}
-          </p>
-        </div>
-
-        <div className="max-w-xl mx-auto">
-          <div className="bg-[#F8F9FA] p-8 sm:p-10 rounded-[24px] border border-[#E5E7EB] hover:border-[#FFC107] transition-all duration-300 text-center shadow-sm">
-            <div className="h-12 w-12 bg-white rounded-[12px] flex items-center justify-center border border-[#E5E7EB] mb-6 shadow-sm mx-auto">
-              <Mail className="h-6 w-6 text-[#FFC107]" />
-            </div>
-            <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">{t.contact.cardTitle}</h3>
-            <p className="text-[#6B7280] mb-6 leading-relaxed">
-              {t.contact.cardDesc}
-            </p>
-            <a
-              href="mailto:contact@zoujup.com"
-              className="text-xl sm:text-2xl font-bold text-[#1A1A1A] hover:text-[#FFC107] transition-colors"
-            >
-              contact@zoujup.com
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <CtaMid variant="mid3" />
 
     <Footer />
   </div>
