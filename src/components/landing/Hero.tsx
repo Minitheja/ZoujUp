@@ -22,13 +22,15 @@ export function Hero() {
             {h.headline1}
             <br />
             <span
-              style={{ WebkitTextStroke: "2px #1A1A1A", WebkitTextFillColor: "white" }}
+              className="text-white"
+              style={{ textShadow: "-2px -2px 0 #1A1A1A, 2px -2px 0 #1A1A1A, -2px 2px 0 #1A1A1A, 2px 2px 0 #1A1A1A, -2px 0 0 #1A1A1A, 2px 0 0 #1A1A1A, 0 -2px 0 #1A1A1A, 0 2px 0 #1A1A1A" }}
             >
               {h.headline2a}
             </span>
             <br />
             <span
-              style={{ WebkitTextStroke: "2px #1A1A1A", WebkitTextFillColor: "white" }}
+              className="text-white"
+              style={{ textShadow: "-2px -2px 0 #1A1A1A, 2px -2px 0 #1A1A1A, -2px 2px 0 #1A1A1A, 2px 2px 0 #1A1A1A, -2px 0 0 #1A1A1A, 2px 0 0 #1A1A1A, 0 -2px 0 #1A1A1A, 0 2px 0 #1A1A1A" }}
             >
               {h.headline2b}
             </span>
