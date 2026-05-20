@@ -110,7 +110,7 @@ export const translations = {
     // CTA
     cta: {
       title: "Save your spot",
-      benefit: "🎁 First 100 sign-ups: 1 month FREE — daily 30-min sessions, video calls, multi-language access",
+      benefit: "🎁 First 100 sign-ups: 1 month FREE — daily sessions, video calls, multi-language access",
       lead: "Tell us a bit about you. We'll be in touch before launch.",
       placeholder: "Your email address",
       button: "Count me in 🙌",
@@ -193,10 +193,10 @@ export const translations = {
     // Hero
     hero: {
       pill: "🚀 Lancement Septembre 2026",
-      headline1: "Stop aux chats sans suite.",
+      headline1: "Fini les discussions aléatoires.",
       headline2a: "Place à la vraie",
-      headline2b: "pratique de langues.",
-      subheadline: "La première app de conversation conçue pour les langues sous-servies et les communautés qui les portent — en commençant par le Darija, le Français, l'Anglais et l'Espagnol. Pas de ghosting, pas de small talk, pas de vibe rencontre. Juste de la vraie pratique.",
+      headline2b: "pratique linguistique.",
+      subheadline: "La première application de pratique orale conçue pour les langues sous-représentées et les communautés qui les relient — en commençant par le darija, le français, l'anglais et l'espagnol. Pas de ghosting, pas de blabla, pas d'ambiance appli de rencontre. Juste de la vraie pratique orale avec des natifs.",
       cta: "Rejoindre la liste",
       earlyAccessTitle:
         "Nous accueillons nos 100 premiers utilisateurs pour garantir des mises en relation de qualité.",
@@ -263,6 +263,10 @@ export const translations = {
       subtitle: "Tout ce que vous devez savoir sur ZoujUp.",
       items: [
         {
+          q: "Quand ZoujUp sera-t-elle lancée ?",
+          a: "**Septembre 2026**. Mais voici le piège : les **100 premières personnes sur la liste d'attente débloquent 1 mois GRATUIT au lancement** — sessions quotidiennes, appels vidéo, toutes les langues. **Plus que 53 places**. Une fois les 100 atteints, cette offre disparaît pour toujours. N'attendez pas.",
+        },
+        {
           q: "Quelles langues puis-je pratiquer ?",
           a: "Au lancement : arabe marocain (Darija) 🇲🇦, français 🇫🇷, anglais 🇬🇧 et espagnol 🇪🇸. D'autres langues arrivent bientôt.\nVous ne trouvez pas votre langue ? Écrivez-nous à contact@zoujup.com - nous construisons en fonction de la demande de la communauté.",
         },
@@ -288,7 +292,7 @@ export const translations = {
     // CTA
     cta: {
       title: "Réserve ta place",
-      benefit: "🎁 Les 100 premiers : 1 mois OFFERT — sessions quotidiennes de 30 min, appels vidéo, accès multi-langues",
+      benefit: "🎁 Les 100 premiers : 1 mois OFFERT — sessions quotidiennes de, appels vidéo, accès multi-langues",
       lead: "Parle-nous un peu de toi. On te recontacte avant le lancement.",
       placeholder: "Ton adresse email",
       button: "Compte sur moi 🙌",
@@ -438,6 +442,10 @@ export const translations = {
       subtitle: "Todo lo que necesitas saber sobre ZoujUp.",
       items: [
         {
+          q: "¿Cuándo se lanzará ZoujUp?",
+          a: "**Septiembre 2026**. Pero hay un detalle: las **primeras 100 personas en la lista de espera desbloquean 1 mes GRATIS al lanzamiento** — sesiones diarias, videollamadas, todos los idiomas. **Solo quedan 53 plazas**. Una vez que lleguemos a 100, esta oferta desaparece para siempre. No esperes.",
+        },
+        {
           q: "¿Qué idiomas puedo practicar?",
           a: "En el lanzamiento: árabe marroquí (Darija) 🇲🇦, francés 🇫🇷, inglés 🇬🇧 y español 🇪🇸. ¿No encuentras tu idioma? Escríbenos a contact@zoujup.com — construimos según la demanda de la comunidad.",
         },
@@ -463,7 +471,7 @@ export const translations = {
     // CTA
     cta: {
       title: "Reserva tu lugar",
-      benefit: "🎁 Los primeros 100: 1 mes GRATIS — sesiones diarias de 30 min, videollamadas, acceso multi-idioma",
+      benefit: "🎁 Los primeros 100: 1 mes GRATIS — sesiones diarias de, videollamadas, acceso multi-idioma",
       lead: "Cuéntanos un poco sobre ti. Te contactaremos antes del lanzamiento.",
       placeholder: "Tu dirección de email",
       button: "Cuenta conmigo 🙌",
@@ -608,7 +616,11 @@ export const translations = {
     faq: {
       title: "الأسئلة المتكررة",
       subtitle: "ZoujUp كلشي اللي خاصك تعرف على",
-      items: [        
+      items: [
+        {
+          q: "إمتى غادي تطلق ZoujUp؟",
+          a: "**سبتمبر 2026**. ولكن كاينة هاد التفصيلة: **أول 100 شخص فالقائمة غادي يحصلو على شهر مجاني عند الإطلاق** — جلسات يومية، مكالمات فيديو، جميع اللغات. **باقي غير 53 مكان**. ملي نوصلو 100، هاد العرض غادي يولي تاريخ. ما تستناش.",
+        },
         {
           q: "أنهي لغات يمكنني نتمرن عليها؟",
           a: "فالإطلاق غادي تلقاو: الدارجة المغربية 🇲🇦، الفرنسية 🇫🇷، الإنجليزية 🇬🇧 والإسبانية 🇪🇸. ولغات خرين جايين قريب. ما لقيتيش لغتك؟ كتب لينا ف contact@zoujup.com — حنا كنطورو التطبيق حسب طلبات الكوميونوتي.",
