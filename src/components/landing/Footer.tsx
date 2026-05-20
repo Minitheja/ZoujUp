@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/LanguageContext";
 
 export function Footer() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const f = t.footer;
 
   const columns = [
@@ -31,13 +31,27 @@ export function Footer() {
             </Link>
             <p className="text-sm opacity-70 leading-relaxed max-w-[280px]">{f.tagline}</p>
             <p className="mt-4 text-sm whitespace-nowrap">
-              <span className="font-bold text-white">{f.questions}</span>{" "}
-              <a
-                href="mailto:contact@zoujup.com"
-                className="text-[#FFC107] font-semibold hover:opacity-80 transition-opacity"
-              >
-                contact@zoujup.com
-              </a>
+              {lang === "da" ? (
+                <>
+                  <a
+                    href="mailto:contact@zoujup.com"
+                    className="text-[#FFC107] font-semibold hover:opacity-80 transition-opacity"
+                  >
+                    contact@zoujup.com
+                  </a>{" "}
+                  <span className="font-bold text-white">{f.questions}</span>
+                </>
+              ) : (
+                <>
+                  <span className="font-bold text-white">{f.questions}</span>{" "}
+                  <a
+                    href="mailto:contact@zoujup.com"
+                    className="text-[#FFC107] font-semibold hover:opacity-80 transition-opacity"
+                  >
+                    contact@zoujup.com
+                  </a>
+                </>
+              )}
             </p>
             <div className="flex gap-3 mt-5 sm:mt-6">
               <a

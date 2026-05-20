@@ -108,10 +108,10 @@ function Index() {
 
         <section
           id="cta"
-          className="min-h-screen flex items-center justify-center bg-[#FFC107] relative overflow-hidden"
+          className="bg-[#FFC107] relative overflow-hidden"
         >
-          <div className="container mx-auto px-4 sm:px-6 max-w-6xl pt-8 pb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh]">
+          <div className="container mx-auto px-4 sm:px-6 max-w-6xl pt-6 pb-16 sm:pt-8 sm:pb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
               {/* Left column — mobile app image */}
               {status !== "success" && (

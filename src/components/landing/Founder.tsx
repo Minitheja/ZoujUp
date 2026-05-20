@@ -1,11 +1,12 @@
 import { useLang } from "@/lib/LanguageContext";
 
 export function Founder() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const f = t.founder;
+  const isRTL = lang === "da";
 
   return (
-    <section id="about" className="bg-white pt-16 pb-14 sm:pt-20 sm:pb-20">
+    <section id="about" className="bg-white pt-16 pb-14 sm:pt-20 sm:pb-20" dir={isRTL ? "rtl" : undefined}>
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 md:gap-12 items-center">
 

@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-16 pb-6 sm:pt-20 sm:pb-8 lg:pt-24 lg:pb-10 flex items-center justify-center bg-[#FFC107]"
+      className="relative overflow-hidden pt-16 pb-0 sm:pt-20 lg:pt-24 flex items-center justify-center bg-[#FFC107]"
     >
       <div className="container mx-auto relative z-10 px-4 sm:px-6 py-4 sm:py-6 lg:py-8">
         <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-5">
@@ -23,14 +23,14 @@ export function Hero() {
             <br />
             <span
               className="text-white"
-              style={{ textShadow: "-2px -2px 0 #1A1A1A, 2px -2px 0 #1A1A1A, -2px 2px 0 #1A1A1A, 2px 2px 0 #1A1A1A, -2px 0 0 #1A1A1A, 2px 0 0 #1A1A1A, 0 -2px 0 #1A1A1A, 0 2px 0 #1A1A1A" }}
+              style={{ textShadow: "0 3px 16px rgba(0,0,0,0.22), 0 1px 4px rgba(0,0,0,0.15)" }}
             >
               {h.headline2a}
             </span>
             <br />
             <span
               className="text-white"
-              style={{ textShadow: "-2px -2px 0 #1A1A1A, 2px -2px 0 #1A1A1A, -2px 2px 0 #1A1A1A, 2px 2px 0 #1A1A1A, -2px 0 0 #1A1A1A, 2px 0 0 #1A1A1A, 0 -2px 0 #1A1A1A, 0 2px 0 #1A1A1A" }}
+              style={{ textShadow: "0 3px 16px rgba(0,0,0,0.22), 0 1px 4px rgba(0,0,0,0.15)" }}
             >
               {h.headline2b}
             </span>
