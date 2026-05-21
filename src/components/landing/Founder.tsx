@@ -1,5 +1,21 @@
 import { useLang } from "@/lib/LanguageContext";
 
+function renderBold(text: string) {
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  if (parts.length === 1) return <span>{text}</span>;
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <strong key={i} className="font-extrabold text-[#1A1A1A]">{part}</strong>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 export function Founder() {
   const { t, lang } = useLang();
   const f = t.founder;
@@ -26,7 +42,7 @@ export function Founder() {
               {f.title}
             </h2>
             <p className="text-[16px] text-[#4B5563] mb-4 leading-relaxed">{f.p1}</p>
-            <p className="text-[16px] text-[#4B5563] mb-6 leading-relaxed">{f.p2}</p>
+            <p className="text-[16px] text-[#4B5563] mb-6 leading-relaxed">{renderBold(f.p2)}</p>
             <p className="text-[18px] font-extrabold text-[#1A1A1A] mt-6 mb-4">{f.signature}</p>
             <div className="flex gap-4">
               <a

@@ -119,7 +119,7 @@ export const translations = {
       legalStart: "By joining, you agree to our",
       legalLinkText: "Privacy Policy",
       legalEnd: ". We will never share your email. ✊",
-      nativeLang: "My native language",
+      nativeLang: "I speak fluently",
       practiceLang: "Language I want to practice",
       langOptions: [
         "Moroccan Arabic (Darija)",
@@ -264,7 +264,7 @@ export const translations = {
       items: [
         {
           q: "Quand ZoujUp sera-t-elle lancée ?",
-          a: "**Septembre 2026**. Mais voici le piège : les **100 premières personnes sur la liste d'attente débloquent 1 mois GRATUIT au lancement** — sessions quotidiennes, appels vidéo, toutes les langues. **Plus que 53 places**. Une fois les 100 atteints, cette offre disparaît pour toujours. N'attendez pas.",
+          a: "**Septembre 2026**. Mais voici le plus intéressant : les **100 premières personnes sur la liste d’attente recevront 1 mois GRATUIT au lancement** — sessions quotidiennes, appels vidéo, toutes les langues. **Il ne reste plus que 53 places**. Une fois les 100 atteints, cette offre disparaît pour toujours. Ne tardez pas.",
         },
         {
           q: "Quelles langues puis-je pratiquer ?",
@@ -301,7 +301,7 @@ export const translations = {
       legalStart: "En t'inscrivant, tu acceptes notre",
       legalLinkText: "Politique de Confidentialité",
       legalEnd: ". On ne partagera jamais ton email. ✊",
-      nativeLang: "Ma langue maternelle",
+      nativeLang: "Je parle couramment",
       practiceLang: "Langue que je souhaite pratiquer",
       langOptions: [
         "Arabe marocain (Darija)",
@@ -324,7 +324,7 @@ export const translations = {
 
     // Counter
     counter: {
-      titleSuffix: "/ 100 places fondateurs prises",
+      titleSuffix: "/ 100 personnes déjà inscrites",
       subtitle: "Quand on atteint 100, on ferme. Les 100 premiers reçoivent 1 mois d'accès illimité OFFERT.",
       percentSuffix: "% prises — places limitées, pas de seconde chance",
     },
@@ -480,7 +480,7 @@ export const translations = {
       legalStart: "Al unirte, aceptas nuestra",
       legalLinkText: "Política de Privacidad",
       legalEnd: ". Nunca compartiremos tu correo electrónico. ✊",
-      nativeLang: "Mi idioma nativo",
+      nativeLang: "Hablo con fluidez",
       practiceLang: "Idioma que quiero practicar",
       langOptions: [
         "Árabe marroquí (Darija)",
@@ -503,7 +503,7 @@ export const translations = {
 
     // Counter
     counter: {
-      titleSuffix: "/ 100 plazas fundador ocupadas",
+      titleSuffix: "/ 100 personas ya se han registrado",
       subtitle: "Cuando lleguemos a 100, cerramos. Los primeros 100 reciben 1 mes de acceso ilimitado GRATIS.",
       percentSuffix: "% ocupadas — plazas limitadas, sin segunda oportunidad",
     },
@@ -688,7 +688,7 @@ export const translations = {
     founder: {
       title: "علاش صنعت زوج-اب ؟",
       p1: "أنا جهان — مغربية مقيمة بالخارج، تزاديت بين جوج ديال العوالم.",
-      p2: "كبرت وأنا كنفهم الدارجة، ولكن كنلقى صعوبة نهضر بها. صنعت زوج-اب حيت ما لقيتش التطبيق اللي كنت محتاجاه. وعارفة بلي ماشي غير أنا اللي كنحس بهاد الشي.",
+      p2: "كبرت وأنا كنفهم الدارجة، ولكن كنلقى صعوبة نهضر بها. صنعت **زوج-اب** حيت ما لقيتش التطبيق اللي كنت محتاجاه. وعارفة بلي ماشي غير أنا اللي كنحس بهاد الشي.",
       signature: "— جهان، مؤسسة زوج-اب",
       linkedin: "LinkedIn",
       instagram: "Instagram",
