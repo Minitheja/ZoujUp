@@ -58,7 +58,7 @@ export function FAQ() {
           <h2 className="text-3xl sm:text-5xl font-bold text-[#1A1A1A] mb-4 tracking-tight">
             {f.title}
           </h2>
-          <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">{f.subtitle}</p>
+          <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">{renderAnswer(f.subtitle)}</p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
