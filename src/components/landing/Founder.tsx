@@ -28,12 +28,11 @@ export function Founder() {
 
           {/* Photo placeholder */}
           <div className="flex justify-center md:justify-start">
-            <div
-              className="w-full max-w-[280px] aspect-square rounded-[24px] flex items-center justify-center text-white font-black text-[64px] shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
-              style={{ background: "linear-gradient(135deg, #FCD53F 0%, #FF8800 100%)" }}
-            >
-              J
-            </div>
+            <img
+              src="/Jihane.jpg"
+              alt="Jihane"
+              className="w-full max-w-[280px] aspect-square rounded-[24px] object-cover shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
+            />
           </div>
 
           {/* Content */}
