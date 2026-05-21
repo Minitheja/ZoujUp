@@ -22,7 +22,7 @@ export function Pains() {
   const isRTL = lang === "da";
 
   return (
-    <section className="bg-white pt-16 pb-10 sm:pt-20 sm:pb-14" dir={isRTL ? "rtl" : undefined}>
+    <section id="features" className="bg-white pt-16 pb-10 sm:pt-20 sm:pb-14" dir={isRTL ? "rtl" : undefined}>
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#1A1A1A] mb-3">

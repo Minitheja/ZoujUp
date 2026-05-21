@@ -12,7 +12,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[#111111] text-[#FFFFFF] pt-14 sm:pt-20 pb-8">
+    <footer id="contact" className="bg-[#111111] text-[#FFFFFF] pt-14 sm:pt-20 pb-8">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
           {/* Brand */}
@@ -107,12 +107,12 @@ export function Footer() {
                     hash = "cta";
                   } else if (label.includes("faq") || label.includes("الأسئلة") || label.includes("questions") || label.includes("preguntas")) {
                     hash = "faq";
-                  } else if (label.includes("contact") || label.includes("contacto")) {
+                  } else if (label.includes("contact") || label.includes("contacto") || label.includes("تواصل")) {
                     hash = "contact";
-                  } else if (label.includes("about") || label.includes("propos") || label.includes("acerca")) {
+                  } else if (label.includes("about") || label.includes("propos") || label.includes("acerca") || label.includes("علينا")) {
                     hash = "about";
-                  } else if (label.includes("feature") || label.includes("fonctionnal") || label.includes("caracter")) {
-                    hash = "difference";
+                  } else if (label.includes("feature") || label.includes("fonctionnal") || label.includes("caracter") || label.includes("المميزات")) {
+                    hash = "features";
                   } else if (label.includes("work") || label.includes("fonctionne") || label.includes("funciona")) {
                     hash = "how-it-works";
                   } else if (label.includes("privacy") || label.includes("confidential") || label.includes("privacidad") || label.includes("سياسة")) {

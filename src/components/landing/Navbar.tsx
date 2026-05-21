@@ -14,9 +14,9 @@ export function Navbar() {
 
   const navItems = [
     { label: t.nav.home, to: "/", hash: "cta" },
-    { label: t.nav.about, to: "/", hash: "home" },
+    { label: t.nav.about, to: "/", hash: "about" },
     { label: t.nav.howItWorks, to: "/", hash: "how-it-works" },
-    { label: t.nav.features, to: "/", hash: "difference" },
+    { label: t.nav.features, to: "/", hash: "features" },
     { label: t.nav.faq, to: "/", hash: "faq" },
     { label: t.nav.contact, to: "/", hash: "contact" },
   ];

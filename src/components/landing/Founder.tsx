@@ -30,13 +30,17 @@ export function Founder() {
             <p className="text-[18px] font-extrabold text-[#1A1A1A] mt-6 mb-4">{f.signature}</p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/jihane-el-farri-aa6244b/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[14px] font-semibold text-[#1A1A1A] border-2 border-[#1A1A1A] rounded-full px-4 py-2 hover:bg-[#1A1A1A] hover:text-white transition-colors"
               >
                 {f.linkedin}
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/jihaneforward?igsh=ZTY4NXU3OW5oemZ5&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[14px] font-semibold text-[#1A1A1A] border-2 border-[#1A1A1A] rounded-full px-4 py-2 hover:bg-[#1A1A1A] hover:text-white transition-colors"
               >
                 {f.instagram}

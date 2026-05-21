@@ -203,7 +203,7 @@ function Index() {
                   />
                   <button
                     type="submit"
-                    className="w-full rounded-[10px] bg-[#1A1A1A] py-4 text-white font-extrabold text-base hover:bg-black transition-colors mt-1"
+                    className="w-full rounded-[10px] bg-[#1A1A1A] py-4 text-white font-extrabold text-base hover:bg-[#FFC107] hover:text-[#1A1A1A] active:scale-[0.98] transition-all duration-200 mt-1"
                   >
                     {c.button}
                   </button>
