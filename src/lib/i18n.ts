@@ -375,10 +375,10 @@ export const translations = {
     // Hero
     hero: {
       pill: "🚀 Lanzamiento Septiembre 2026",
-      headline1: "Basta de chats sin fin.",
+      headline1: "Basta de chats aleatorios.",
       headline2a: "Empieza a practicar",
       headline2b: "de verdad.",
-      subheadline: "La primera app de práctica oral diseñada para las lenguas menos representadas y las comunidades que las mantienen vivas — empezando por el Darija, el Francés, el Inglés y el Español. Sin ghosting, sin small talk, sin rollo dating. Solo práctica de verdad.",
+      subheadline: "La primera app de práctica oral diseñada para las lenguas menos representadas y las comunidades que las mantienen vivas — empezando por el Darija, el Francés, el Inglés y el Español. Sin ghosting, sin conversaciones vacías, sin ligoteos. Solo práctica de verdad.",
       cta: "Únete a la lista",
       earlyAccessTitle:
         "Estamos incorporando a nuestros primeros 100 usuarios para asegurar coincidencias de alta calidad desde el primer día.",
@@ -393,8 +393,8 @@ export const translations = {
       subtitle: "Problemas reales. Soluciones reales. Sin bullshit.",
       items: [
         { icon: "😤", q: "\"Estudié durante años y todavía me bloqueo cuando intento hablar.\"", a: "**ZoujUp no es estudiar — es hablar.** Sin flashcards. Sin tests de gramática. Solo conversaciones reales con personas reales. Los estudios muestran que 15 minutos diarios de práctica oral superan horas de aprendizaje pasivo." },
-        { icon: "💔", q: "\"Otras apps de idiomas parecen apps de citas. Vine a aprender, no a que me liguen.\"", a: "**ZoujUp es anti-dating por diseño.** Sin perfiles que navegar. Sin swipe. Sin mensajería pública. Solo sesiones estructuradas con un compañero emparejado para tu objetivo, anonimizado solo con nombre de pila." },
-        { icon: "⏰", q: "\"Los tutores son caros. Las clases no encajan en mi horario. No puedo mantenerlo.\"", a: "**15 minutos. Eso es todo.** ZoujUp encaja en tu café de la mañana, tu commute, tu pausa de almuerzo. Tu compañero recibe el mismo valor — está aprendiendo tu idioma." },
+        { icon: "💔", q: "\"Otras apps de idiomas parecen apps de citas. Vine a aprender, no a que intenten ligar conmigo.\"", a: "**ZoujUp es anti-dating por diseño.** Sin perfiles que navegar. Sin swipe. Sin mensajería pública. Solo sesiones estructuradas con un compañero emparejado para tu objetivo, anonimizado solo con nombre de pila." },
+        { icon: "⏰", q: "\"Los tutores son caros. Las clases no encajan en mi horario. No puedo mantenerlo.\"", a: "**15 minutos. Eso es todo.** ZoujUp encaja en tu café de la mañana, tu trayecto al trabajo, tu pausa de almuerzo. Tu compañero recibe el mismo valor — está aprendiendo tu idioma." },
         { icon: "🌍", q: "\"Estoy en la diáspora. Estoy perdiendo el idioma de mis padres — y mis hijos perderán más.\"", a: "**Tráelo de vuelta a casa.** Cada sesión es una conversación más que puedes tener con tu familia. Algunos usuarios de ZoujUp practican por la mañana, luego usan esas frases la misma noche — en la mesa, con sus hijos." },
         { icon: "💼", q: "\"Estoy en Marruecos. Necesito inglés o francés para mi carrera — pero no tengo a nadie real con quien practicar aquí.\"", a: "**El mundo está al otro lado de la pantalla.** Practica con un nativo francés o inglés que de verdad quiere aprender Darija de ti. Acentos auténticos, expresiones reales, argot actual — no inglés de libro de un tutor que nunca ha vivido en Londres." },
       ],
