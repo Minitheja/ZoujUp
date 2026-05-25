@@ -1,3 +1,4 @@
+import React from "react";
 import { useLang } from "@/lib/LanguageContext";
 import {
   Accordion,
@@ -8,19 +9,50 @@ import {
 
 const EMAIL = "contact@zoujup.com";
 
+const FLAG_MAP: Record<string, string> = {
+  "\u{1F1F2}\u{1F1E6}": "ma",
+  "\u{1F1EB}\u{1F1F7}": "fr",
+  "\u{1F1EC}\u{1F1E7}": "gb",
+  "\u{1F1EA}\u{1F1F8}": "es",
+};
+
+const FLAG_REGEX = /(\u{1F1F2}\u{1F1E6}|\u{1F1EB}\u{1F1F7}|\u{1F1EC}\u{1F1E7}|\u{1F1EA}\u{1F1F8})/gu;
+
+function renderWithFlags(text: string): React.ReactNode[] {
+  const parts = text.split(FLAG_REGEX);
+  return parts.map((part, i) => {
+    const code = FLAG_MAP[part];
+    if (code) {
+      return (
+        <img
+          key={i}
+          src={`https://flagcdn.com/20x15/${code}.png`}
+          width="20"
+          height="15"
+          alt={part}
+          className="inline-block align-middle mx-0.5"
+        />
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
 function renderSegment(segment: string, key: number) {
   const emailParts = segment.split(EMAIL);
-  if (emailParts.length === 1) return <span key={key}>{segment}</span>;
+  if (emailParts.length === 1) {
+    return <span key={key}>{renderWithFlags(segment)}</span>;
+  }
   return (
     <span key={key}>
-      {emailParts[0]}
+      {renderWithFlags(emailParts[0])}
       <a
         href={`mailto:${EMAIL}`}
         className="text-[#1A1A1A] font-semibold underline underline-offset-2 hover:text-[#FFC107] transition-colors duration-200"
       >
         {EMAIL}
       </a>
-      {emailParts[1]}
+      {renderWithFlags(emailParts[1])}
     </span>
   );
 }
@@ -42,11 +74,12 @@ function renderAnswer(text: string) {
 }
 
 export function FAQ() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const f = t.faq;
+  const isRTL = lang === "da";
 
   return (
-    <section id="faq" className="pt-20 sm:pt-28 pb-16 sm:pb-24 bg-white relative overflow-hidden">
+    <section id="faq" className="pt-20 sm:pt-28 pb-16 sm:pb-24 bg-white relative overflow-hidden" dir={isRTL ? "rtl" : undefined}>
       {/* Decorative background elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-[#FFC107]/5 blur-[120px] rounded-full" />

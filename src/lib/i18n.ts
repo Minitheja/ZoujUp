@@ -196,7 +196,7 @@ export const translations = {
       headline1: "Fini les discussions aléatoires.",
       headline2a: "Place à la vraie",
       headline2b: "pratique linguistique.",
-      subheadline: "La première application de pratique orale conçue pour les langues sous-représentées et les communautés qui les relient — en commençant par le darija, le français, l'anglais et l'espagnol. Pas de ghosting, pas de blabla, pas d'ambiance appli de rencontre. Juste de la vraie pratique orale avec des natifs.",
+      subheadline: "La première application de pratique orale conçue pour les langues sous-représentées et les communautés qui les relient — en commençant par la darija, le français, l'anglais et l'espagnol. Pas de ghosting, pas de blabla, pas d'ambiance appli de rencontre. Juste de la vraie pratique orale avec des natifs.",
       cta: "Rejoindre la liste",
       earlyAccessTitle:
         "Nous accueillons nos 100 premiers utilisateurs pour garantir des mises en relation de qualité.",
@@ -315,7 +315,7 @@ export const translations = {
     // Founder
     founder: {
       title: "Pourquoi j'ai créé ZoujUp",
-      p1: "Je suis Jihane — MRE, née entre deux mondes. J’ai grandi en comprenant le darija mais en galèrant à le parler.",
+      p1: "Je suis Jihane — MRE, née entre deux mondes. J’ai grandi en comprenant la darija mais en galèrant à le parler.",
       p2: "J’ai créé ZoujUp parce que je ne trouvais pas l’app dont j’avais besoin. Et je sais que je ne suis pas la seule.",
       signature: "— Jihane, Fondatrice de ZoujUp",
       linkedin: "LinkedIn",
