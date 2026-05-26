@@ -10,16 +10,29 @@ interface LanguageContextValue {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>(() => {
-    // Persist preference across reloads
+function safeGetLang(): Lang {
+  try {
     const saved = localStorage.getItem("zoujup-lang") as Lang;
     return (saved === "fr" || saved === "es" || saved === "da") ? saved : "en";
-  });
+  } catch {
+    return "en";
+  }
+}
+
+function safeSetLang(value: Lang) {
+  try {
+    localStorage.setItem("zoujup-lang", value);
+  } catch {
+    // storage blocked — continue without persisting
+  }
+}
+
+export function LanguageProvider({ children }: { children: ReactNode }) {
+  const [lang, setLang] = useState<Lang>(safeGetLang);
 
   const setLanguage = useCallback((newLang: Lang) => {
     setLang(newLang);
-    localStorage.setItem("zoujup-lang", newLang);
+    safeSetLang(newLang);
   }, []);
 
   const toggleLang = useCallback(() => {
@@ -28,8 +41,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       if (prev === "en") next = "fr";
       else if (prev === "fr") next = "es";
       else next = "en";
-      
-      localStorage.setItem("zoujup-lang", next);
+
+      safeSetLang(next);
       return next;
     });
   }, []);
