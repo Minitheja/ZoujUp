@@ -90,7 +90,7 @@ export const translations = {
         },
         {
           q: "Is ZoujUp free to use?",
-          a: "ZoujUp offers a free plan to get you started, with premium plans available for those who want to practice more. Full pricing details will be available at launch.",
+          a: "ZoujUp isn’t free, but every new user gets a 14-day free trial with full access to all features. At the end of your trial, you can choose the subscription plan that suits you best. To thank our early supporters, waitlist members will get their first month completely free when we launch.",
         },
         {
           q: "Is ZoujUp different from other language apps?",
@@ -272,7 +272,7 @@ export const translations = {
         },
         {
           q: "ZoujUp est-il gratuit ?",
-          a: "ZoujUp propose un forfait gratuit pour vous permettre de commencer, avec des forfaits premium disponibles pour ceux qui souhaitent s'entraîner davantage. Les détails complets des tarifs seront disponibles lors du lancement.",
+          a: "ZoujUp n’est pas gratuit, mais chaque nouvel utilisateur bénéficie d’un essai gratuit de 14 jours avec un accès complet à toutes les fonctionnalités. À la fin de l’essai, tu pourras choisir l’abonnement qui te convient le mieux. Pour remercier nos premiers membres, les personnes inscrites sur la liste d’attente bénéficieront d’un premier mois entièrement offert au lancement.",
         },
         {
           q: "ZoujUp est-il différent des autres applications de langues ?",
@@ -450,8 +450,8 @@ export const translations = {
           a: "En el lanzamiento: árabe marroquí (Darija) 🇲🇦, francés 🇫🇷, inglés 🇬🇧 y español 🇪🇸. ¿No encuentras tu idioma? Escríbenos a contact@zoujup.com — construimos según la demanda de la comunidad.",
         },
         {
-          q: "¿Es ZoujUp gratuito?",
-          a: "ZoujUp ofrece un plan gratuito para que puedas empezar, con planes premium disponibles para aquellos que quieran practicar más. Los detalles completos de los precios estarán disponibles en el lanzamiento.",
+          q: "¿ZoujUp es gratis?",
+          a: "ZoujUp no es gratis, pero cada nuevo usuario disfruta de una prueba gratuita de 14 días con acceso completo a todas las funciones. Al finalizar la prueba, podrás elegir el plan de suscripción que mejor se adapte a ti. Como agradecimiento a nuestros primeros usuarios, las personas inscritas en la lista de espera disfrutarán de su primer mes completamente gratis cuando lancemos la app.",
         },
         {
           q: "¿Es ZoujUp diferente de otras aplicaciones de idiomas?",
@@ -644,7 +644,7 @@ export const translations = {
         },
         {
           q: "واش زوج-اب مجاني؟",
-          a: "التطبيق ديالنا كيوفر عرض مجاني باش تقدر تبدا، وكاينين حتى عروض بريميوم للي بغاو يتدربو أكثر. التفاصيل الكاملة ديال الأثمنة غادي تكون متوفرة ملي يطلقو التطبيق.",
+          a: "زوج-اب ماشي مجاني، ولكن كل مستخدم جديد كيستافد من تجربة مجانية لمدة 14 يوم مع الولوج الكامل لجميع المميزات. من بعد ما تسالي التجربة، كتختار الاشتراك اللي كيناسبك أكثر. وباش نشكرو الناس اللي دعمو زوج-اب من اللول، الناس اللي تسجلو فاللائحة ديال الانتظار غادي يستافدو من أول شهر مجاني بالكامل ملي يطلق التطبيق.",
         },
         {
           q: "واش زوج-اب مختلف على التطبيقات الاخرى ديال اللغات؟",
