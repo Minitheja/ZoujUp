@@ -28,6 +28,16 @@ export default defineConfig({
     assetsInlineLimit: 4096, // inline small assets (<4 KB) as base64
     chunkSizeWarningLimit: 400,
   },
+  // Proxy API calls in dev to avoid CORS issues
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://api.zoujup.com",
+        changeOrigin: true,
+        secure: true,
+      },
+    },
+  },
   // Optimise dev server pre-bundling
   optimizeDeps: {
     include: ["react", "react-dom", "@tanstack/react-router", "lucide-react"],
