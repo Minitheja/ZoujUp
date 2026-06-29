@@ -79,21 +79,33 @@ function Index() {
     setStatus("submitting");
 
     const formData = new FormData(e.currentTarget);
-    
+
     try {
-      const response = await fetch("https://formspree.io/f/xojbznbd", {
+      const response = await fetch("/api/v1/contact", {
         method: "POST",
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nativeLanguage: formData.get("Native Language") as string,
+          practiceLanguage: formData.get("Practice Language") as string,
+          email: formData.get("Email") as string,
+        }),
       });
 
-      if (response.ok) {
-        setStatus("success");
-      } else {
-        setStatus("error");
+      const data = await response.json();
+
+      if (!response.ok) {
+        const msg = Array.isArray(data.message)
+          ? data.message.join(", ")
+          : (data.message ?? "Something went wrong.");
+        throw new Error(msg);
       }
+
+      // API returns { ok: true, next: "..." } on success
+      if (data.ok === false) {
+        throw new Error(data.message ?? "Something went wrong.");
+      }
+
+      setStatus("success");
     } catch (error) {
       setStatus("error");
     }
