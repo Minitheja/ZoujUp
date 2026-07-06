@@ -37,7 +37,7 @@ function Index() {
   const c = t.cta;
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const COUNTER_TARGET = 47;
+  const COUNTER_TARGET = 75;
   const [counterVal, setCounterVal] = useState(0);
   const [barWidth, setBarWidth] = useState(0);
   const counterSectionRef = useRef<HTMLElement>(null);
