@@ -21,6 +21,17 @@ const CHEVRON_SVG = (
   </svg>
 );
 
+const PROMO_CODE_STORAGE_KEY = "zoujup_promo_code";
+
+function getInitialPromoCode(): string {
+  const fromUrl = new URLSearchParams(window.location.search).get("promo");
+  if (fromUrl) {
+    localStorage.setItem(PROMO_CODE_STORAGE_KEY, fromUrl);
+    return fromUrl;
+  }
+  return localStorage.getItem(PROMO_CODE_STORAGE_KEY) ?? "";
+}
+
 export function Cta() {
   const { t } = useLang();
   const c = t.cta;
@@ -28,6 +39,7 @@ export function Cta() {
   const [nativeLanguage, setNativeLanguage] = useState("");
   const [practiceLanguage, setPracticeLanguage] = useState("");
   const [email, setEmail] = useState("");
+  const [promoCode, setPromoCode] = useState(getInitialPromoCode);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -40,7 +52,12 @@ export function Cta() {
       const res = await fetch("/api/v1/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nativeLanguage, practiceLanguage, email }),
+        body: JSON.stringify({
+          nativeLanguage,
+          practiceLanguage,
+          email,
+          promoCode: promoCode || undefined,
+        }),
       });
 
       const data = await res.json();
@@ -52,8 +69,7 @@ export function Cta() {
         throw new Error(msg);
       }
 
-      // API returns { ok: true, next: "..." } on success
-      if (data.ok === false) {
+      if (data.success === false) {
         throw new Error(data.message ?? "Something went wrong.");
       }
 
@@ -138,6 +154,15 @@ export function Cta() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className="w-full rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base"
+              />
+
+              {/* Promo code input */}
+              <input
+                type="text"
+                placeholder={c.promoCodePlaceholder}
+                value={promoCode}
+                onChange={(e) => setPromoCode(e.target.value)}
                 className="w-full rounded-[12px] px-5 py-4 text-[#1A1A1A] bg-[#FFFFFF] border-none focus:outline-none focus:ring-2 focus:ring-[#111111] text-base"
               />
             </div>

@@ -121,6 +121,7 @@ export const translations = {
       legalEnd: ". We will never share your email. ✊",
       nativeLang: "I speak fluently",
       practiceLang: "Language I want to practice",
+      promoCodePlaceholder: "Promo code (optional)",
       langOptions: [
         "Moroccan Arabic (Darija)",
         "French",
@@ -303,6 +304,7 @@ export const translations = {
       legalEnd: ". On ne partagera jamais ton email. ✊",
       nativeLang: "Je parle couramment",
       practiceLang: "Langue que je souhaite pratiquer",
+      promoCodePlaceholder: "Code promo (optionnel)",
       langOptions: [
         "Arabe marocain (Darija)",
         "Français",
@@ -482,6 +484,7 @@ export const translations = {
       legalEnd: ". Nunca compartiremos tu correo electrónico. ✊",
       nativeLang: "Hablo con fluidez",
       practiceLang: "Idioma que quiero practicar",
+      promoCodePlaceholder: "Código promocional (opcional)",
       langOptions: [
         "Árabe marroquí (Darija)",
         "Francés",
@@ -675,6 +678,7 @@ export const translations = {
       legalEnd: " ديالنا. ما غادي نشاركو الإيميل ديالك أبداً. ✊",
       nativeLang: "اللغة الأم ديالي",
       practiceLang: "اللغة اللي بغيت نتعلمها",
+      promoCodePlaceholder: "كود بروموسيون (اختياري)",
       langOptions: [
         "الدارجة المغربية",
         "الفرنسية",
