@@ -32,10 +32,22 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const PROMO_CODE_STORAGE_KEY = "zoujup_promo_code";
+
+function getInitialPromoCode(): string {
+  const fromUrl = new URLSearchParams(window.location.search).get("promo");
+  if (fromUrl) {
+    localStorage.setItem(PROMO_CODE_STORAGE_KEY, fromUrl);
+    return fromUrl;
+  }
+  return localStorage.getItem(PROMO_CODE_STORAGE_KEY) ?? "";
+}
+
 function Index() {
   const { lang, t } = useLang();
   const c = t.cta;
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [promoCode, setPromoCode] = useState(getInitialPromoCode);
 
   const COUNTER_TARGET = 75;
   const [counterVal, setCounterVal] = useState(0);
@@ -88,6 +100,7 @@ function Index() {
           nativeLanguage: formData.get("Native Language") as string,
           practiceLanguage: formData.get("Practice Language") as string,
           email: formData.get("Email") as string,
+          promoCode: promoCode || undefined,
         }),
       });
 
@@ -100,8 +113,7 @@ function Index() {
         throw new Error(msg);
       }
 
-      // API returns { ok: true, next: "..." } on success
-      if (data.ok === false) {
+      if (data.success === false) {
         throw new Error(data.message ?? "Something went wrong.");
       }
 
@@ -211,6 +223,14 @@ function Index() {
                     type="email"
                     placeholder={c.placeholder}
                     required
+                    className="w-full rounded-[10px] px-4 py-3.5 text-[#1A1A1A] bg-[#F9FAFB] border-[1.5px] border-transparent focus:outline-none focus:border-[#F5C414] text-[15px] font-semibold"
+                  />
+                  <input
+                    name="Promo Code"
+                    type="text"
+                    placeholder={c.promoCodePlaceholder}
+                    value={promoCode}
+                    onChange={(e) => setPromoCode(e.target.value)}
                     className="w-full rounded-[10px] px-4 py-3.5 text-[#1A1A1A] bg-[#F9FAFB] border-[1.5px] border-transparent focus:outline-none focus:border-[#F5C414] text-[15px] font-semibold"
                   />
                   <button
