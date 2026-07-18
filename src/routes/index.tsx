@@ -49,7 +49,7 @@ function Index() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [promoCode, setPromoCode] = useState(getInitialPromoCode);
 
-  const COUNTER_TARGET = 75;
+  const COUNTER_TARGET = 99;
   const [counterVal, setCounterVal] = useState(0);
   const [barWidth, setBarWidth] = useState(0);
   const counterSectionRef = useRef<HTMLElement>(null);
