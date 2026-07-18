@@ -93,7 +93,7 @@ function Index() {
     const formData = new FormData(e.currentTarget);
 
     try {
-      const response = await fetch("/api/v1/contact", {
+      const response = await fetch("https://api.zoujup.com/api/v1/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
