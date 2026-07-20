@@ -48,6 +48,7 @@ function Index() {
   const c = t.cta;
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [promoCode, setPromoCode] = useState(getInitialPromoCode);
+  const [alreadyRegistered, setAlreadyRegistered] = useState(false);
 
   const COUNTER_TARGET = 99;
   const [counterVal, setCounterVal] = useState(0);
@@ -89,6 +90,7 @@ function Index() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
+    setAlreadyRegistered(false);
 
     const formData = new FormData(e.currentTarget);
 
@@ -117,6 +119,7 @@ function Index() {
         throw new Error(data.message ?? "Something went wrong.");
       }
 
+      setAlreadyRegistered(Boolean(data.alreadyRegistered));
       setStatus("success");
     } catch (error) {
       setStatus("error");
@@ -156,7 +159,9 @@ function Index() {
                   <CheckCircle2 className="h-14 w-14 text-[#FFC107]" />
                 </div>
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#111111] mb-6">
-                  {lang === "en" ? "You're on the list!" : lang === "fr" ? "Vous êtes sur la liste !" : lang === "da" ? "!نت فالقائمة" : "¡Estás en la lista!"}
+                  {alreadyRegistered
+                    ? c.alreadyRegistered
+                    : lang === "en" ? "You're on the list!" : lang === "fr" ? "Vous êtes sur la liste !" : lang === "da" ? "!نت فالقائمة" : "¡Estás en la lista!"}
                 </h2>
                 <p className="text-[#111111] text-xl opacity-90 max-w-md mx-auto leading-relaxed">
                   {lang === "en"

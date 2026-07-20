@@ -42,11 +42,13 @@ export function Cta() {
   const [promoCode, setPromoCode] = useState(getInitialPromoCode);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [alreadyRegistered, setAlreadyRegistered] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
     setErrorMsg("");
+    setAlreadyRegistered(false);
 
     try {
       const res = await fetch("/api/v1/contact", {
@@ -73,6 +75,7 @@ export function Cta() {
         throw new Error(data.message ?? "Something went wrong.");
       }
 
+      setAlreadyRegistered(Boolean(data.alreadyRegistered));
       setStatus("success");
     } catch (err) {
       setErrorMsg(
@@ -94,7 +97,9 @@ export function Cta() {
 
         {status === "success" ? (
           <div className="max-w-md mx-auto bg-white/80 rounded-[16px] px-8 py-10">
-            <p className="text-[#111111] font-bold text-xl mb-2">{c.alert}</p>
+            <p className="text-[#111111] font-bold text-xl mb-2">
+              {alreadyRegistered ? c.alreadyRegistered : c.alert}
+            </p>
             <p className="text-[#111111]/70 text-sm">{c.note}</p>
           </div>
         ) : (
