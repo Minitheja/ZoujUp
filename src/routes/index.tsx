@@ -49,6 +49,8 @@ function Index() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [promoCode, setPromoCode] = useState(getInitialPromoCode);
   const [alreadyRegistered, setAlreadyRegistered] = useState(false);
+  const [nativeLanguage, setNativeLanguage] = useState("");
+  const [practiceLanguage, setPracticeLanguage] = useState("");
 
   const COUNTER_TARGET = 99;
   const [counterVal, setCounterVal] = useState(0);
@@ -99,8 +101,8 @@ function Index() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nativeLanguage: formData.get("Native Language") as string,
-          practiceLanguage: formData.get("Practice Language") as string,
+          nativeLanguage,
+          practiceLanguage,
           email: formData.get("Email") as string,
           promoCode: promoCode || undefined,
         }),
@@ -173,7 +175,11 @@ function Index() {
                     : "Gracias por unirte a ZoujUp. Nos pondremos en contacto contigo tan pronto como estemos listos."}
                 </p>
                 <button
-                  onClick={() => setStatus("idle")}
+                  onClick={() => {
+                    setStatus("idle");
+                    setNativeLanguage("");
+                    setPracticeLanguage("");
+                  }}
                   className="mt-8 text-[#111111] font-bold underline hover:opacity-70 transition-opacity"
                 >
                   {lang === "en" ? "Back to form" : lang === "fr" ? "Retour au formulaire" : lang === "da" ? "ارجع للفورم" : "Volver al formulario"}
@@ -191,13 +197,18 @@ function Index() {
                     <select
                       name="Native Language"
                       required
+                      value={nativeLanguage}
+                      onChange={(e) => setNativeLanguage(e.target.value)}
                       className="w-full appearance-none rounded-[10px] px-4 py-3.5 text-[#1A1A1A] bg-[#F9FAFB] border-[1.5px] border-transparent focus:outline-none focus:border-[#F5C414] text-[15px] font-semibold cursor-pointer"
-                      defaultValue=""
                     >
                       <option value="" disabled>{c.nativeLang}</option>
-                      {c.langOptions.map((opt) => (
-                        <option key={opt} value={opt}>{opt}</option>
-                      ))}
+                      {c.langOptions
+                        .filter((opt) => opt !== practiceLanguage)
+                        .map((opt) => (
+                          <option key={opt} value={opt} disabled={opt === c.langOptions[c.langOptions.length - 1]}>
+                            {opt}
+                          </option>
+                        ))}
                     </select>
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                       <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,13 +220,18 @@ function Index() {
                     <select
                       name="Practice Language"
                       required
+                      value={practiceLanguage}
+                      onChange={(e) => setPracticeLanguage(e.target.value)}
                       className="w-full appearance-none rounded-[10px] px-4 py-3.5 text-[#1A1A1A] bg-[#F9FAFB] border-[1.5px] border-transparent focus:outline-none focus:border-[#F5C414] text-[15px] font-semibold cursor-pointer"
-                      defaultValue=""
                     >
                       <option value="" disabled>{c.practiceLang}</option>
-                      {c.langOptions.map((opt) => (
-                        <option key={opt} value={opt}>{opt}</option>
-                      ))}
+                      {c.langOptions
+                        .filter((opt) => opt !== nativeLanguage)
+                        .map((opt) => (
+                          <option key={opt} value={opt} disabled={opt === c.langOptions[c.langOptions.length - 1]}>
+                            {opt}
+                          </option>
+                        ))}
                     </select>
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                       <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
