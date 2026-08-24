@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as MailResponseTokenRouteImport } from './routes/mail-response.$token'
 
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
@@ -28,35 +29,49 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MailResponseTokenRoute = MailResponseTokenRouteImport.update({
+  id: '/mail-response/$token',
+  path: '/mail-response/$token',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/mail-response/$token': typeof MailResponseTokenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/mail-response/$token': typeof MailResponseTokenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/mail-response/$token': typeof MailResponseTokenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/privacy-policy'
+  fullPaths: '/' | '/contact' | '/privacy-policy' | '/mail-response/$token'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/privacy-policy'
-  id: '__root__' | '/' | '/contact' | '/privacy-policy'
+  to: '/' | '/contact' | '/privacy-policy' | '/mail-response/$token'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/privacy-policy'
+    | '/mail-response/$token'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  MailResponseTokenRoute: typeof MailResponseTokenRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +97,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/mail-response/$token': {
+      id: '/mail-response/$token'
+      path: '/mail-response/$token'
+      fullPath: '/mail-response/$token'
+      preLoaderRoute: typeof MailResponseTokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +111,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  MailResponseTokenRoute: MailResponseTokenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
